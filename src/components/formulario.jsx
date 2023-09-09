@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "rc-slider";
-import "rc-slider/assets/index.css"; // Asegúrate de importar los estilos de la librería
-import Etiqueta from "./etiqueta"
+import "rc-slider/assets/index.css";
+import Etiqueta from "./Etiqueta"
 import arrayGenero from "../array/genero.json";
 import arraySubtarea from "../array/subtarea.json";
 import arraySexo from "../array/sexo.json";
