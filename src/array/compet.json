@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "selec": "A1 (Acceso)"
+  },
+  {
+    "id": "2",
+    "selec": "A2 (Plataforma)"
+  },
+  {
+    "id": "3",
+    "selec": "B1 (Umbral) "
+  },
+  {
+    "id": "4",
+    "selec": "B2 (Avanzado)"
+  },
+  {
+    "id": "5",
+    "selec": "C1 (Dominio operativo eficaz)"
+  },
+  {
+    "id": "6",
+    "selec": "C2 (Maestría)"
+  }
+]
+

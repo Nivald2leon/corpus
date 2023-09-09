@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0",
+    "selec": "Cualquiera"
+  },
+  {
+    "id": "1",
+    "selec": "Preuniversitario"
+  },
+  {
+    "id": "2",
+    "selec": "Grado"
+  },
+  {
+    "id": "3",
+    "selec": "Máster"
+  },
+  {
+    "id": "4",
+    "selec": "Doctorado"
+  }
+]

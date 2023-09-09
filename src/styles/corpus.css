@@ -1,0 +1,460 @@
+
+/*------------------------------------------*/
+/*  Booking
+/*------------------------------------------*/
+
+
+/*------------------------------------------*/
+/*  background
+/*------------------------------------------*/
+.inicio {
+  background-image: ('/imagen/ChinoEspañol5.jpg');
+  background-size: cover; /*Ajusta el tamaño de la imagen para cubrir todo el fondo */ 
+  background-position: center;
+  min-height: 100vh; /* Asegura que la sección tenga al menos el alto de la ventana */
+  padding-top: 100px;
+  padding-bottom: 1px;
+}
+
+
+#background {
+  background-image: ('/imagen/ChinoEspañol5.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 1px;
+} 
+  
+  #background-pagina {
+    background-image: url(/public/imagen/hero-9.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 220px;
+    
+  } 
+
+
+/*------------------------------------------*/
+/*  Header
+/*------------------------------------------*/
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: "auto";
+    z-index: 100;
+    /* Agrega otros estilos que desees para el Header fijo */
+} 
+
+/*------------------------------------------*/
+/*  Navigation
+/*------------------------------------------*/
+
+.fixed-navigation {
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  
+  /* Agrega otros estilos que desees para el Navigation fijo */    
+} 
+
+.select-service-container {
+  margin-bottom: 100px; /* Ajusta el valor según sea necesario */
+}
+
+.nav-container {
+  background: white;
+  padding: 5px;
+  border-radius: 15px;
+  width: 420px;
+  height: 55px;
+  
+
+}
+
+  
+
+/*------------------------------------------*/
+/*  SelecService
+/*------------------------------------------*/
+
+    
+
+
+
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px;
+    }
+
+    .rectangular-container {
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      border: 3px solid red;
+      padding: 1px;
+      border-radius: 12px;
+      /* background-color: rgba(255, 255, 255, 0); */
+      background-color: white
+    }
+
+    .service-label {
+      display: flex;
+      align-items: flex-start;
+      cursor: pointer;
+      margin-bottom: 2px;
+      position: relative;
+    }
+
+    .service-label input[type="radio"] {
+      display: none;
+    }
+
+    .service-label input[type="radio"]:checked + .service-check::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      /* background-color: #da3b85; */
+    }
+
+    .service-content {
+      text-align: Center;
+      width: 100%;
+      height: "auto"
+    }
+
+    .price-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: right;
+    }
+
+    .price-number {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      /* Estilos para dispositivos móviles */
+      .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px; /* Ajusta el valor para la separación entre filas en dispositivos móviles */
+      }
+    }
+  
+    
+/*------------------------------------------*/
+/*  Botton Component
+/*------------------------------------------*/
+    /* <styl jsx>{` */
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .button-row {
+          display: flex;
+          gap: 10px;
+        }
+
+        .option-button {
+          flex: 1;
+          border: 2px solid #da3b85;
+          background-color: transparent;
+          color: #da3b85;
+        }
+
+        .option-button.active,
+        .option-button:hover {
+          background-color: #da3b85;
+          color: white;
+        }
+      /* `}</style> */
+
+
+      .custom-datepicker .react-datepicker-wrapper {
+        border: 12px solid red; /* Cambia el color y el grosor del borde del DatePicker */
+      }
+
+/*------------------------------------------*/
+/*  BookingTime
+/*------------------------------------------*/
+  
+.rectangular-button {
+ /* display: flex;
+   flex-direction: column; */
+  border: 3px solid #da3b85;
+  border-radius: 12px;
+  background-color: white;
+  width: 85px;
+  margin-right: 9px;
+  margin-left: 9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para el botón cuando está seleccionado */
+.rectangular-button.selected {
+  background-color: #da3b85; 
+  color: white;
+  border: 3px solid #da3b85;
+}
+
+/* Agrega un estilo para el servicio seleccionado */
+.pricing-3-item.selected {
+  background-color: red;
+  border: 3px solid red;
+}
+
+.image-redonda{
+  border: 3px solid #da3b85;
+  border-radius: 12px;
+  background-color: white;
+  width: 65px;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+.my-time-picker
+{
+  display: flex; 
+  align-items: center;
+  margin-right: 12px;
+  margin-left: 110px;
+  
+}
+
+.submenu {
+  position: absolute;
+  top: 100%; /* Posiciona el submenú debajo del enlace del menú principal */
+  left: 0;
+  width: 150%;
+  background-color: red;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  
+}
+
+.submenu li {
+  border-bottom: 1px solid #cccccc; /* Cambia el color y grosor del borde según tus preferencias */
+  padding-bottom: 0px; /* Espacio entre los elementos del submenú */
+  margin-bottom: 0px; /* Espacio entre los elementos y el borde inferior */
+}
+
+.submenu li:hover {
+  text-decoration: underline;
+  background-color: #f0f0f0; 
+  color: #333;  
+}
+.custom-navbar {
+  background-color: red; /* Color de fondo rojo */
+  height: 60px; /* Altura personalizada en píxeles */
+}
+
+.menup {
+  width: auto;
+  position: relative;
+  color:Write;
+  background-color: red;
+  }
+
+
+
+
+.btn-outline-success {
+  color: #ffffff; 
+  background-color: red; 
+  border-color: red; 
+  width: 100px;
+  height: 35px;
+  margin-left: 15px;
+  border: 1px solid black;
+  border-radius: 7%;
+  
+}
+
+
+.btn-outline-success:hover {
+  color: red; 
+  background-color: #ffffff; 
+  border-color: #ffffff; 
+} 
+
+.custom-font {
+  font-family: 'Breathing', Breathing; 
+  font-weight: bold; 
+  font-size: 3.5rem; 
+}
+
+.objetivo {
+  padding-top: 100px;
+}
+
+.imagen-derecha {
+  float: right;
+}
+
+.cache {
+  padding-top: 60px;
+}
+
+.formulario-con-boton-derecha {
+  display: flex;
+  width: 780px;
+}
+
+li a:hover {
+  text-decoration: underline;
+   
+}
+.correo {
+  text-align: center;
+}
+
+.selec-simple{
+  border: 2px solid red;
+  height: 40px;
+  border-radius: var(--bs-border-radius); 
+  width: 300px
+  
+}
+
+/* .buscar {
+  padding-top: 40px;
+} */
+
+
+.encabezado {
+  border: 2px solid red;
+  /* height: 100px; */
+  border-radius: var(--bs-border-radius);
+  background-color: #ffffff;
+  margin-top: 10px;
+  
+
+}
+
+.form-corpus {
+  
+  max-width: 1140px;
+  padding: 0 15px;
+  
+}
+
+/*botones del navegador Booking*/
+.btn-nav-corpus{
+  font-size: 19px;
+  color: white;
+  height: 40px;
+  border-radius: var(--bs-border-radius);
+  background-color: red; 
+  border-color:red;  
+  width: 150px;
+}
+
+.btn-nav-corpus:hover {
+  color: red; 
+  background-color: white;
+  border-color:  red; 
+}
+
+.btn-nav-buscar{
+  color: white;
+  background-color:red;
+  border-color:red;  
+  font-size: 19px;
+  height: 40px;
+  border-radius: var(--bs-border-radius);
+  width: 150px;
+}
+
+
+
+
+
+.btn-nav-buscar:hover {
+  color: black; 
+  background-color: white;
+  border-color:  red; 
+}
+
+
+
+.btn-nav-link{
+  text-decoration: none;
+  padding: 6px 50px;
+  margin-right: 10px;
+  border-color:red
+}
+
+.mi-div-fijo {
+  position: fixed;
+  top: 0;
+  left: 0; /* Opcional: puedes ajustar la posición horizontal */
+  width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+  background-color: #ffffff; /* Puedes personalizar el fondo */
+  z-index: 999; /* Opcional: controla la superposición si hay otros elementos fijos */
+}
+
+.bloqueador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semitransparente */
+  z-index: 1000; /* Valor alto para que esté en la parte superior */
+  pointer-events: auto; /* Esto permite bloquear los eventos del mouse en esta área */
+}
+
+.z-index{
+  z-index: 1
+}
+
+.margen-superior {
+  height: 80px; /* Altura del margen superior fijo */
+ }
+
+
+
+ .titulo-texto {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  /* text-decoration: underline; */ 
+ }
+
+
+/* Cambiar el color de la barra de desplazamiento a azul */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: red;
+}
+
+/* Cambiar el color del control deslizante a azul */
+input[type="range"]::-webkit-slider-thumb {
+  background-color:red;
+}
+
+
+
+.barras{
+  text-align: inherit;
+  color: black;
+  border-color:red
+
+  }
+ 

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "Titulo": "Diseño MACRO",
+    "parrafo1": "Como se observa en el Esquema, CACHE estará conformado por cuatro subcorpus: dos subcorpus de interlenguas de aprendientes de español y los dos subcorpus de control en español y chino mandarín. El núcleo del corpus lo constituyen los dos subcorpus de aprendientes: el Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera, en el que participarán aprendientes sin inmersión lingüística, y el Subcorpus de Aprendientes Chinos de Español como Segunda Lengua, en el que colaborarán aprendientes en contextos de inmersión. Ambos subcorpus incluirán dos niveles: un componente oral y otro escrito.",
+    "parrafo2": "También se compondrá de dos subcorpus de control, de la lengua hablada y escrita por los nativos de español y del chino mandarín. Se incluirá un Subcorpus de Hablantes Nativos de Español, en el que se recogerán muestras de lengua de hablantes nativos de español (de cualquiera de las comunidades lingüísticas del mundo hispano); y un Subcorpus de Hablantes Nativos de Chino, en el que se recopilarán muestras de lengua de hablantes de chino mandarín.",
+    "parrafo3": "Hasta el momento, solo se ha construido el componente escrito del Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera. Todavía se están recogiendo datos para la construcción de los restantes subcorpus y componentes de CACHE." 
+  }  
+]

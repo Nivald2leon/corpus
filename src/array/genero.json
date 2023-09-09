@@ -1,0 +1,19 @@
+[
+  {
+    "id": "0",
+    "selec": "Cualquiera"
+  },
+  {
+    "id": "1",
+    "selec": "Expositivo-descriptivo"
+  },
+  {
+    "id": "2",
+    "selec": "Narrativo"
+  },
+  {
+    "id": "3",
+    "selec": "Argumentativo"
+  }
+]
+

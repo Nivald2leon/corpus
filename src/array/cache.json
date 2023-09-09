@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "Titulo": "¿Qué es CACHE?",
+    "parrafo1": "CACHE significa Corpus de Aprendientes Chinos de Español. Constituye un corpus de aprendientes, entendido como un corpus especializado, constituido por un conjunto de textos, orales o escritos, que son reales,  lo que implica que proceden de actos lingüísticos efectivamente realizados y producidos en condiciones naturales  por estudiantes de una determinada lengua segunda (L2) o extranjera (LE) , con una o diferentes lenguas maternas (L1) y con distintos grados de dominio de la L2/LE, que se almacena en formato electrónico y se codifica con metadatos y anotaciones lingüísticas con el fin de poder estudiar científicamente y con una orientación empírica las características de la interlengua correspondiente que se manifiestan a lo largo del proceso de aprendizaje. (Gou, 2023)",
+    "parrafo2": "Una caracterización general de CACHE señala que se trata de un corpus especializado, muestral y representativo, multilingüe -contemplará un corpus nativo de control en español y chino mandarín-, mixto -incluirá muestras orales y escrita-, y abierto; además, será de orientación transversal.",
+    "parrafo3": "CACHE constituye una gran base de datos que contiene la lengua producida por los estudiantes chinos de español como lengua extranjera (ELE) y segunda lengua (EL2). También incluye un subcorpus de lengua producida en idioma chino que es la lengua materna (L1) de los estudiantes y un subcorpus de hablantes nativos cuya L1 es el español, lo que favorece la realización de estudios contrastivos. Por ello, CACHE está compuesto por 4 subcorpus, a saber, Subcorpus de Aprendientes Chinos de Español como Lengua extranjera, Subcorpus de Aprendientes Chinos de Español como Segunda Lengua y Subcorpus de Hablantes nativos de Español y Subcorpus de Hablantes Nativos de Chino. Además, cada uno de estos subcorpus contará con dos componentes: el componente oral y el escrito. " 
+  }         
+]

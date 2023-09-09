@@ -1,0 +1,70 @@
+[
+  {
+    "id": "0",
+    "Titulo": "Etapas en la construcción de CACHE",
+    "etapa":"Para la construcción de CACHE se han establecido las tres etapas, resumidas en el Esquema, y se han previsto acciones puntuales para cada una de ellas. A continuación, se describen.",
+    "subetapa1": "Esquema . Etapas planificadas para la construcción de CACHE",
+    "subetapa2": "",
+    "subetapa3": "" ,
+    "subetapa4": "",
+    "subetapa5": "",
+    "subetapa6": "",
+    "subetapa7": "",
+    "subetapa8": ""     
+  },
+  {
+    "id": "1",
+    "Titulo": "Etapa de diseño: ",
+    "etapa":"Esta primera etapa se centra en el diseño y, por tanto, se corresponde con el periodo previo a la recogida de los datos. En ella, se han establecido las siguientes acciones:",
+    "subetapa1": "Revisar de forma crítica la bibliografía especializada con vistas a sistematizar los referentes teóricos y metodológicos que fundamentan el diseño de un corpus. ",
+    "subetapa2": "Construir un diseño macro del corpus de aprendientes teniendo en cuenta la teoría sistematizada. ",
+    "subetapa3": "Asumir los principios teóricos y metodológicos en los que se cimenta el diseño del corpus que se construirá. " ,
+    "subetapa4": "Determinar metadatos lingüísticos y extralingüísticos que se emplearán en la codificación y anotación lingüística de las muestras de lenguas que favorezcan la construcción de un corpus representativo de la interlengua española de los aprendientes chinos.",
+    "subetapa5": "Crear y validar las tareas de expresión e interacción orales y escritas que se utilizarán como estímulos para la recogida de datos, teniendo en cuenta el objetivo general del corpus y los descriptores establecidos para estas destrezas en el Marco Común Europeo de Referencia y el Plan Curricular del Instituto Cervantes.",
+    "subetapa6": "Diseñar y validar un instrumento informático adecuado para la recolección de los metadatos lingüísticos y extralingüísticos y la obtención de muestras de lengua, orales y escritas, que se incluirán en el corpus.",
+    "subetapa7": "Determinar la herramienta lingüística informática que se empleará para la codificación lingüística y extralingüística y la anotación lingüística.",
+    "subetapa8": "Determinar y diseñar el sistema informático con el que se gestionarán los datos y que constituirá la vía mediante la que se podrá acceder libremente al corpus por internet."     
+  },
+  {
+    "id": "2",
+    "Titulo": "Etapa de recolección de datos: ",
+    "etapa":"Esta etapa se corresponde con el período en que se recogen los datos. En ella, se ha contemplado básicamente la siguiente acción: ",
+    "subetapa1": "Recoger, a partir de las tareas e instrumentos creados y validados en la etapa de diseño, las muestras lingüísticas del español producidas por aprendientes chinos, teniendo en cuenta los objetivos, criterios de selección y los metadatos lingüísticos y extralingüísticos convenidos.",
+    "subetapa2": "",
+    "subetapa3": "" ,
+    "subetapa4": "",
+    "subetapa5": "",
+    "subetapa6": "",
+    "subetapa7": "",
+    "subetapa8": ""     
+  },
+  {
+    "id": "3",
+    "Titulo": "Etapa de construcción: ",
+    "etapa":"Esta etapa se corresponde con el periodo en que se sistematizan todas las muestras de lengua obtenidas y se finaliza la construcción del corpus. En ella se contemplan las siguientes acciones:",
+    "subetapa1": "Seleccionar para su inclusión en el corpus aquellas muestras de lenguas que cumplan los criterios de selección convenidos y desechar las restantes.",
+    "subetapa2": "Efectuar, automática y manualmente, el proceso de codificación y anotación de las muestras aprobadas para su inclusión en el corpus, a partir de los metadatos y etiquetas convenidas.",
+    "subetapa3": "Construir la herramienta informática de búsqueda del corpus, una Web, que permita recuperar información estadística y lingüística; y publicarla con acceso abierto para uso de la comunidad científica." ,
+    "subetapa4": "Publicar el corpus, según la vía determinada, con acceso abierto para uso de la comunidad académica y científica.",
+    "subetapa5": "",
+    "subetapa6": "",
+    "subetapa7": "",
+    "subetapa8": ""     
+  },
+  {
+    "id": "4",
+    "Titulo": "",
+    "etapa":"Tomado de: Gou, J., Rodríguez Roque, D., y Cuba Vega, L. (2023). Diseño teórico y metodológico del Corpus de Aprendientes Chinos de Español. Mendive. Revista de Educación, 21(4), e3347. Recuperado de https://mendive.upr.edu.cu/index.php/MendiveUPR/article/view/3347",
+    "subetapa1": "",
+    "subetapa2": "",
+    "subetapa3": "" ,
+    "subetapa4": "",
+    "subetapa5": "",
+    "subetapa6": "",
+    "subetapa7": "",
+    "subetapa8": ""     
+  }        
+]
+ 
+  
+

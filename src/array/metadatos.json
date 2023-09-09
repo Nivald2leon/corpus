@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "Titulo": "Metadatos lingüísticos y extralingüísticos",
+    "parrafo1": "Hoy en día se habla de la objetividad que se logra con la investigación lingüística basada en corpus y se afirma que la lingüística de corpus es, precisamente, una aproximación empírica. Siempre se ha considerado que esta objetividad se alcanza con la construcción de un corpus representativo de la realidad lingüística en cuestión; sin embargo, este grado de objetividad no responde solamente a la exhaustividad, también depende, y en gran medida, del empleo de metadatos lingüísticos y extralingüísticos adecuados, garantes también de la representatividad y de la posibilidad de contrastes. Así pues, CACHE contará con un conjunto de metadatos bien definidos que favorecerá la explotación del corpus, pues todos los empleados en la codificación y anotación permitirán filtrar información en las búsquedas automáticas.", 
+    "parrafo2":"Seguidamente, se presentan los metadatos lingüísticos (textuales) y extralingüísticos (sociolingüísticos) que se usarán en la codificación de los textos del componente escrito del Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera. "
+ }, 
+ {
+  "id": "2",
+  "Titulo": "Metadatos lingüísticos",
+  "parrafo1": "Como se aprecia en la Tabla, los metadatos lingüísticos que se consideran para la codificación de los textos reflejan información importante relacionada con el género y tipo de texto, el tipo de tarea, la cantidad de palabras y párrafos y el uso de diccionarios, además, indican si el texto fue escrito en un contexto controlado o no y la identidad de los encargados de examinar los textos para determinar su inclusión o exclusión del corpus.",
+  "parrafo2": ""
+}, 
+{
+  "id": "3",
+  "Titulo": "Metadatos extralingüísticos  ",
+  "parrafo1": "Por su parte, en la Tabla, se relacionan los metadatos extralingüísticos que se tienen en cuenta en la codificación de los textos. Entre ellos, destacan las variables sociales habituales en la sociolingüística (sexo, edad, nivel de instrucción, lengua materna), consideradas variables adscritas. Pero también, se incluyen otras variables denominadas adquiridas como las lenguas extranjeras, el nivel adquirido en esas lenguas extranjeras, las estancias en el extranjero, los estudios y centros de estudios, y la motivación ante el estudio del español. ",
+  "parrafo2": "Algunos de estos metadatos se emplearán para la codificación de los textos en la web del corpus y servirán para filtrar información en búsquedas automáticas, por ejemplo, la edad, el nivel de idiomas, etc. Sin embargo, otros serán de utilidad para desambiguar ante cualquier duda que aparezca cuando se examinen los datos. Así, por ejemplo, ante un texto de un informante que cursa el tercer año de la carrea en Filología Hispánica y lleva unos dos años estudiando español y no posea ninguna certificación que acredite su nivel de idioma, se contrastará el nivel de lengua con el que se ha autoevaluado con el nivel que señale la prueba de nivel, y se tendrá en cuenta el año de la carrera que cursa. De esta manera, se podrá ubicar mejor en el nivel de lengua que le corresponde. En suma, algunos de estos datos serán usados en el diseño del corpus, mientras que otros solo permitirán hacer una mejor evaluación de los textos recogidos."
+}, 
+{
+  "id": "4",
+  "Titulo": "",
+  "parrafo1": "Tomado de: Gou, J., Rodríguez Roque, D., y Cuba Vega, L. (2023). Diseño teórico y metodológico del Corpus de Aprendientes Chinos de Español. Mendive. Revista de Educación, 21(4). Recuperado de https://mendive.upr.edu.cu/index.php/MendiveUPR/article/view/3347",
+  "parrafo2": ""
+}
+]

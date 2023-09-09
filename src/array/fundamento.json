@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "Titulo": "Principios teóricos y metodológicos para la fundamentación del diseño",
+    "parrafo": "El diseño de un corpus cualquiera debe fundamentarse en criterios teóricos y metodológicos específicos. Se considera que los principios de creación de un corpus, formulados por Sinclair (2005) son válidos como fundamento principal del diseño de los corpus de aprendientes. La creación de CACHE se rige por los diez principios de creación de corpus por dicho autor que se describen a continuación."
+  }, 
+  {
+    "id": "2",
+    "Titulo": "Principio para la selección del contenido:",
+    "parrafo": "«The contents of a corpus should be selected without regard for the language they contain, but according to their communicative function in the community in which they arise» (Sinclair, 2005, p. 1). Los textos que conformarán CACHE serán producidos en condiciones naturales, por lo que se crearán según criterios externos, es decir, en dependencia de su función comunicativa. No se considerarán criterios internos referidos a la lengua del texto, es decir, con el objetivo de recoger una determinada estructura lingüística."
+  },  
+  {
+    "id": "3",
+    "Titulo": "Principio de la representatividad: ",
+    "parrafo": "«Corpus builders should strive to make their corpus as representative as possible of the language from which it is chosen» (Sinclair, 2005, p. 2). CACHE no puede ser un corpus representativo del español, porque se trata de un corpus de aprendientes. Este corpus será representativo de la interlengua de los aprendientes chinos de español. Ahora bien, cuando se habla de representatividad aquí, no se pretende representar la “totalidad” de la lengua española producida por aprendientes chinos, pues un corpus que pretenda eso, tendría que recoger datos, por ejemplo, en todos los centros educativos donde se aprende español en China y donde los chinos aprenden español en el extranjero. Así pues, dicha representatividad se logra con la inclusión de muestras de interlengua en diferentes estadios de desarrollo toda vez que en su construcción participarán aprendientes de los niveles A1- C2. De hecho, CACHE constituirá un corpus a partir de un muestreo de orientación transversal que considerará los distintos niveles de competencia. Por otro lado, con el fin de obtener una variedad de estructuras lingüísticas, se ofrecerán diferentes tareas comunicativas a modo de estímulos para las producciones textuales y se tendrán en cuenta la diversidad de tipos de textos, otros aspectos que prevé la representatividad toda vez que la diversidad de temas y tipos de textos favorece la elicitación variadas formas y estructuras lingüísticas."
+  },  
+  {
+    "id": "4",
+    "Titulo": "Principio del contraste: ",
+    "parrafo": "«Only those components of corpora which have been designed to be independently contrastive should be contrasted» (Sinclair, 2005, p. 3). Lo descrito en el segundo principio favorece el cumplimiento del tercero, porque la representatividad con la inclusión de muestras de interlengua en diferentes estadios de desarrollo con la participación de aprendientes de los niveles A1- C2, permite contrastar diferentes estadios de la interlengua. Pero, además, el diseño de CACHE comprende la conformación de dos subcorpus de interlengua: un Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera donde participarán aprendientes en contextos de no inmersión lingüística y un Subcorpus de Aprendientes Chinos de Español como Segunda Lengua donde participarán aprendientes en contextos de inmersión lingüística. Cada uno de estos subcorpus dispondrá de un componente oral y escrito. El diseño, la metodología, y las tareas previstas para la recogida de los datos serán iguales para ambos subcorpus, de modo que quede garantizada la posibilidad de realizar contrastes de interlengua entre aprendientes en contexto de no inmersión e inmersión lingüística. Además, de la misma manera se concibe la recogida de datos del Subcorpus de Hablantes Nativos de Español y del Subcorpus de Hablantes Nativos de Chino, lo que permite hacer contrastes fiables. Como afirma Cruz (2017), «el análisis empírico de un corpus de aprendices generalmente se realiza comparándolo con un “corpus de control” que está constituido por textos de características similares (tema, tipo de texto, etc.) producidos por nativos». (p. 138). El poder contrastar la interlengua de los estudiantes chinos con la lengua producida por nativos del español, posibilita el logro de una mayor objetividad en el análisis. "
+  },  
+  {
+    "id": "5",
+    "Titulo": "Principio para la determinación de los criterios estructurales: ",
+    "parrafo": "«Criteria for determining the structure of a corpus should be small in number, clearly separate from each other, and efficient as a group in delineating a corpus that is representative of the language or variety under examination» (Sinclair, 2005, p. 5). Como CACHE intenta ser un corpus grande, este criterio resulta muy importante. Ahora bien, no se puede aplicar este criterio de la manera en que se aplicaría a los extensos corpus de referencia. CACHE es un corpus de aprendientes y su diseño estructural marco, descrito en el tercer principio, ya se rige por criterios exactos: según el contexto de estudio de los aprendientes (con sin inmersión lingüística o sin ella) se estructura en dos subcorpus que, a su vez, y teniendo en cuenta el medio de producción de los textos (orales o escritos) se dividen en dos componentes. Además, el diseño micro contemplará una división por los niveles de lenguas A1-C2. "
+  },  
+  {
+    "id": "6",
+    "Titulo": "Principio para el establecimiento del etiquetado: ",
+    "parrafo": "«Any information about a text other than the alphanumeric string of its words and punctuation should be stored separately from the plain text and merged when required in applications» (Sinclair, 2005, p. 5). Para cumplir con este principio, cuando se vaya a comenzar con el proceso de codificación de los textos de CACHE, la inclusión de metadatos y la anotación lingüística, se seleccionará una herramienta lingüística que tras el proceso de codificación produzca un nuevo fichero XML con el texto con metadatos y anotaciones y conserve el fichero original con el texto limpio.   "
+  },  
+  {
+    "id": "7",
+    "Titulo": "Principio para la determinación de la muestra: ",
+    "parrafo": "«Samples of language for a corpus should wherever possible consist of entire documents or transcriptions of complete speech events or should get as close to this target as possible. This means that samples will differ substantially in size» (Sinclair, 2005, p. 7). En CACHE solo se incluirán textos completos sin considerar su extensión en número de palabras, porque, como enfatiza Sinclair (2005), seleccionar muestras del mismo tamaño no posee ningún valor desde el punto de vista lingüístico, pero la integridad y la representatividad de los textos completos si adquiere alto valor."
+  },  
+  {
+    "id": "8",
+    "Titulo": "Principio para la selección de la documentación: ",
+    "parrafo": "«The design and composition of a corpus should be documented fully with information about the contents and arguments in justification of the decisions taken» (Sinclair, 2005, p. 8). Dado que CACHE es un corpus que pretende ser una fuente de datos de acceso libre con la que numerosos lingüistas y profesores de español podrán desarrollar variados estudios sobre la interlengua de los estudiantes chinos que estudian español, la Web que lo albergará contendrá todos los documentos que fundamentan teórica y metodológicamente el diseño y la recogida de datos, información relativa a los metadatos incluidos en el corpus y al proceso de anotación lingüística, etc. "
+  },  
+  {
+    "id": "9",
+    "Titulo": "Principio del equilibrio: ",
+    "parrafo": "«The corpus builder should retain, as target notions, representativeness, and balance. While these are not precisely definable and attainable goals, they must be used to guide the design of a corpus and the selection of its components» (Sinclair, 2005, p. 9). En este sentido, el interés por la representatividad y el equilibro está explícito en el propio diseño de CACHE que contiene un componente escrito y uno oral en cada uno de sus subcorpus. De esta forma, los resultados obtenidos a partir del uso de CACHE podrán ser extrapolados tanto a la interlengua escrita como oral.  "
+  },  
+  {
+    "id": "10",
+    "Titulo": "Principio para la determinación del tema: ",
+    "parrafo": "«Any control of subject matter in a corpus should be imposed by the use of external, and not internal, criteria» (Sinclair, 2005, p.10). En relación con este, el cumplimiento del primer principio referido al contenido del corpus y del segundo que exige la representatividad, obliga a regirse por el noveno. Los controles que se efectuarán estarán relacionados con criterios externos como el nivel de interlengua, pero nunca se aplicarán criterios que condicionen las muestras de lengua en busca de unas estructuras lingüísticas concretas.  "
+  },  
+  {
+    "id": "11",
+    "Titulo": "Principio de la homogeneidad:",
+    "parrafo": "«A corpus should aim for homogeneity in its components while maintaining adequate coverage, and rogue texts should be avoided» (Sinclair, 2005, p. 14). CACHE desde su diseño considera el respeto a la homogeneidad en sus componentes y plantea unos criterios claros para evitar la introducción de textos atípicos en el corpus. Por ejemplo, quedarán excluidos aquellos textos que no constituyan una unidad de comunicación completa y otros que presenten señales de empleo de traducción."
+  },
+  {
+    "id": "12",
+    "Titulo": "",
+    "parrafo": "Tomado de: Gou, J., Rodríguez Roque, D., y Cuba Vega, L. (2023). Diseño teórico y metodológico del Corpus de Aprendientes Chinos de Español. Mendive. Revista de Educación, 21(4), e3347. Recuperado de https://mendive.upr.edu.cu/index.php/MendiveUPR/article/view/3347 "
+  }  
+]
