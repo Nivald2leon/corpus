@@ -1,5 +1,5 @@
 import texto from "../array/texto.json";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "/public/imagen/logoChinaEspaña.jpg";
 
@@ -7,24 +7,36 @@ const Encabezado = ({ opciones, onitemClick}) => {
 
 
   const [lastClickedIndex, setLastClickedIndex] = useState(null);
+  
+  //buscar por palabras
   const palabraBuscada = new RegExp(`\\b${opciones.palabras}\\b`, "gi");
-
-  //esta funcion la voy a utilizar después
-  const encabezado1 = texto
-    .filter((elemento) => elemento.subtarea === "C12")
-    .map((elemento) => ({
-      ...elemento,
-      texto: elemento.texto.substring(0, 230), // Recorta el texto a 10 caracteres
-    }));
-
-  const encabezado2 = texto
+  const preFiltro = texto
     .filter((elemento) => palabraBuscada.test(elemento.texto))
-    .map((elemento) => ({
-      ...elemento,
-      texto: elemento.texto.substring(0, 10230),
-    }));
 
-  const encabezado = encabezado2.map((objeto) => {
+console.log(preFiltro)
+
+  // Aplicar otros filtros
+  const opcionesFiltradas = { ...opciones };
+  delete opcionesFiltradas.palabras;
+  
+  const textoFiltrado = preFiltro.filter((item) => {
+    for (const key in opcionesFiltradas) {
+      if (opcionesFiltradas[key] && opcionesFiltradas[key] !== item[key]) {
+        return false;
+      }
+    }
+    return true;
+  });
+  
+  console.log(textoFiltrado);
+  console.log(opciones)
+
+
+
+console.log (preFiltro)
+
+  //recortar antes y despues de la palabra  
+  const encabezado = textoFiltrado.map((objeto) => {
     const texto = objeto.texto;
     const palabras = opciones.palabras;
 
@@ -103,6 +115,9 @@ const Encabezado = ({ opciones, onitemClick}) => {
                       }}
  */
                       >
+                        <a>(</a>
+                         <a>{item.id}</a>
+                        <a>)</a>
                         <a style={{ color: "red" }}>[...]</a>
                         <a dangerouslySetInnerHTML={{ __html: item.texto }}></a>
                         <a style={{ color: "red" }}>[...]</a>

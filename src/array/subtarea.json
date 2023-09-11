@@ -1,181 +1,181 @@
 [
   {
     "id": "A11",
-    "tselec": "Tarea A1",
+    "tselec": "A1 (Acceso)",
     "opcion" : 1,
     "selec":"Opción 1. Escriba una presentación personal para colgarla en el mural del salón de clase el primer día del curso. "  
   },
   {
     "id": "A12",
-    "tselec": "Tarea A1",
+    "tselec": "A1 (Acceso)",
     "opcion" : 2,
     "selec":"Opción 2. Escriba una presentación de su familia para publicarla en el blog de redacción de su clase de español.  "  
   },
   {
     "id": "A13",
-    "tselec": "Tarea A1",
+    "tselec": "A1 (Acceso)",
     "opcion" : 3,
     "selec":"Opción 3. Escriba un texto breve en el que describa su ciudad natal para presentarla en una feria internacional de turismo. "  
   },
   {
     "id": "A14",
-    "tselec": "Tarea A1",
+    "tselec": "A1 (Acceso)",
     "opcion" : 4,
     "selec":"Opción 4.  Escriba un texto breve hablando de su profesor preferido para colgarlo en un foro universitario el Día del Maestro. "  
   },
   {
     "id": "A15",
-    "tselec": "Tarea A1",
+    "tselec": "A1 (Acceso)",
     "opcion" : 5,
     "selec":"Opción 5. Escriba un texto sobre sus gustos y aficiones para publicarlo en una red social para encontrar un amigo. "
   },
   {
     "id": "A21",
-    "tselec": "Tarea A2",
+    "tselec": "A2 (Plataforma)",
     "opcion" : 1,
     "selec":"Opción 1. Usted ha recibido el siguiente wasap de su madre. Escriba un mensaje como respuesta. "
   },
   {
     "id": "A22",
-    "tselec": "Tarea A2",
+    "tselec": "A2 (Plataforma)",
     "opcion" : 2,
     "selec":"Opción 2. Usted ha recibido el siguiente correo electrónico de un (a) amigo (a). Escriba un correo electrónico para responderle, en el que deberá, entre otras cosas, aceptar o rechazar su petición. "
   },
   {
     "id": "A23",
-    "tselec": "Tarea A2",
+    "tselec": "A2 (Plataforma)",
     "opcion" : 3,
     "selec":"Opción 3. Usted ha leído un correo que un(a) amigo(a) le ha escrito para quedar la próxima semana（约下周见）.  Conteste a su amigo (a). "
   },
   {
     "id": "A24",
-    "tselec": "Tarea A2",
+    "tselec": "A2 (Plataforma)",
     "opcion" : 4,
     "selec":"Opción 4. Usted ha recibido un mensaje de un(a) compañero(a) de clase en el que le propone cambiar una cita. Conteste a su compañero(a)."
   },
   {
     "id": "A25",
-    "tselec": "Tarea A2",
+    "tselec": "A2 (Plataforma)",
     "opcion" : 5,
     "selec":"Opción 5. Un (a) amigo (a) le escribió un correo ofreciéndose para ayudarle con sus trabajos de fin de curso. Usted necesita responderle."
   },
   {
     "id": "B11",
-    "tselec": "Tarea B1",
+    "tselec": "B1 (Umbral)",
     "opcion" : 1,
     "selec":"Opción 1. Escriba una autobiografía para colgarla en el mural de la clase presentando su candidatura al puesto de líder estudiantil."
   },
   {
     "id": "B12",
-    "tselec": "Tarea B1",
+    "tselec": "B1 (Umbral)",
     "opcion" : 2,
     "selec":"Opción 2. Escriba una presentación de su familia para publicarla en un foro de su escuela, titulado “No es la mejor familia, pero mejor no la quiero”."
   },
   {
     "id": "B13",
-    "tselec": "Tarea B1",
+    "tselec": "B1 (Umbral)",
     "opcion" : 3,
     "selec":"Opción 3. Escriba una narración en la que cuente de una anécdota o experiencia de viaje inolvidable. Con ella pretende participar en un concurso de escritura creativa. "
   },
   {
     "id": "B14",
-    "tselec": "Tarea B1",
+    "tselec": "B1 (Umbral)",
     "opcion" : 4,
     "selec":"Opción 4. Escriba una opinión sobre la importancia de las nuevas tecnologías en el aprendizaje de idiomas. "
   },
   {
     "id": "B15",
-    "tselec": "Tarea B1",
+    "tselec": "B1 (Umbral)",
     "opcion" : 5,
     "selec":"Opción 5. Escriba una reseña crítica de la última película que vio en una sala de cine."
   },
   {
     "id": "B21",
-    "tselec": "Tarea B2",
+    "tselec": "B2 (Avanzado)",
     "opcion" : 1,
     "selec":"Opción 1. Usted ha leído un mensaje que una amiga envió en un chat grupal de su clase y decide escribirle, en privado, un correo electrónico para ofrecerle su ayuda."
   },
   {
     "id": "B22",
-    "tselec": "Tarea B2",
+    "tselec": "B2 (Avanzado)",
     "opcion" : 2,
     "selec":"Opción 2. Usted ha recibido un anuncio sobre las nuevas becas para la realización de estudios universitarios que está ofertando el Gobierno de su país y decide escribir una solicitud formal."
   },
   {
     "id": "B23",
-    "tselec": "Tarea B2",
+    "tselec": "B2 (Avanzado)",
     "opcion" : 3,
     "selec":"Opción 3. Usted ha leído una noticia y decide escribir una carta a la redacción del periódico local para manifestar indignación o aprobación ante el comportamiento del rey Felipe VI."
   },
   {
     "id": "B24",
-    "tselec": "Tarea B2",
+    "tselec": "B2 (Avanzado)",
     "opcion" : 4,
     "selec":"Opción 4. Usted ha realizado un viaje recientemente a Cayo Guillermo, en Cuba, pero ha encontrado una gran diferencia entre el paquete reservado en la agencia y lo encontrado en el destino turístico. Decide escribir una queja."
   },
   {
     "id": "B25",
-    "tselec": "Tarea B2",
+    "tselec": "B2 (Avanzado)",
     "opcion" : 5,
     "selec":"Opción 5. Una amiga de la infancia le invita a su boda, pero por algún motivo no puede asistir.  Escriba un correo para, entre otras cosas, pedirle disculpas."
   },
   {
     "id": "C11",
-    "tselec": "Tarea C1",
+    "tselec": "C1 (Dominio operativo eficaz)",
     "opcion" : 1,
     "selec":"Opción 1. Usted trabaja en el Ministerio de Cultura de su país. Su jefe le ha pedido que redacte un informe sobre los espacios culturales o formas de expresión popular y tradicional de su país que podrían presentarse como posibles candidatas a la distinción de “obras maestras del patrimonio oral e inmaterial de la humanidad” por la UNESCO."
   },
   {
     "id": "C12",
-    "tselec": "Tarea C1",
+    "tselec": "C1 (Dominio operativo eficaz)",
     "opcion" : 2,
     "selec":"Opción 2. Usted ha entrado a un hilo de discusión del Foro “Por un mundo sin miseria” en el que se debate en torno a lo que plantea un proverbio chino archiconocido: “Dale un pez a un hombre y comerá hoy. Enséñale a pescar y comerá el resto de su vida”. Usted se decide a escribir una entrada para ofrecer su opinión sobre el significado amplio que representa este proverbio: una defensa de la educación como herramienta contra la pobreza frente a la ayuda asistencialista."
   },
   {
     "id": "C13",
-    "tselec": "Tarea C1",
+    "tselec": "C1 (Dominio operativo eficaz)",
     "opcion" : 3,
     "selec":"Opción 3. El editor principal de la revista Líbero, donde usted trabaja, le ha solicitado que escriba una reseña literaria para publicarla en una columna especial que se editará bajo el título de “Mi infancia y un libro” con motivo del Día Internacional del Libro, el próximo 23 de abril."
   },
   {
     "id": "C14",
-    "tselec": "Tarea C1",
+    "tselec": "C1 (Dominio operativo eficaz)",
     "opcion" : 4,
     "selec":"Opción 4. Escriba un artículo de opinión para publicarlo en el periódico El País sobre la relación entre el hombre y la política, partiendo del concepto aristotélico “zoon politikón” (animal político o animal cívico) que sostiene que el hombre es por naturaleza un ser destinado a la política."
   },
   {
     "id": "C15",
-    "tselec": "Tarea C1",
+    "tselec": "C1 (Dominio operativo eficaz)",
     "opcion" : 5,
     "selec":"Opción 5. Mucha gente afirma que, aunque se ha facilitado la interconectividad entre diferentes culturas, etnias y pueblos, cada uno mantiene su idiosincrasia. Escriba una descripción sobre la idiosincrasia de la gente de su país."
   },
   {
     "id": "C21",
-    "tselec": "Tarea C2",
+    "tselec": "C2 (Maestría)",
     "opcion" : 1,
     "selec":"Opción 1. Usted trabaja en el Ministerio de Cultura de su país. Su jefe le ha pedido que redacte un informe sobre los espacios culturales o formas de expresión popular y tradicional de su país que podrían presentarse como posibles candidatas a la distinción de “obras maestras del patrimonio oral e inmaterial de la humanidad” por la UNESCO."
   },
   {
     "id": "C22",
-    "tselec": "Tarea C2",
+    "tselec": "C2 (Maestría)",
     "opcion" : 2,
     "selec":"Opción 2. Usted ha entrado a un hilo de discusión del Foro “Por un mundo sin miseria” en el que se debate en torno a lo que plantea un proverbio chino archiconocido: “Dale un pez a un hombre y comerá hoy. Enséñale a pescar y comerá el resto de su vida”. Usted se decide a escribir una entrada para ofrecer su opinión sobre el significado amplio que representa este proverbio: una defensa de la educación como herramienta contra la pobreza frente a la ayuda asistencialista."
   },
   {
     "id": "C23",
-    "tselec": "Tarea C2",
+    "tselec": "C2 (Maestría)",
     "opcion" : 3,
     "selec":"Opción 3. El editor principal de la revista Líbero, donde usted trabaja, le ha solicitado que escriba una reseña literaria para publicarla en una columna especial que se editará bajo el título de “Mi infancia y un libro” con motivo del Día Internacional del Libro, el próximo 23 de abril."
   },
   {
     "id": "C24",
-    "tselec": "Tarea C2",
+    "tselec": "C2 (Maestría)",
     "opcion" : 4,
     "selec":"Opción 4. Escriba un artículo de opinión para publicarlo en el periódico El País sobre la relación entre el hombre y la política, partiendo del concepto aristotélico “zoon politikón” (animal político o animal cívico) que sostiene que el hombre es por naturaleza un ser destinado a la política."
   },
   {
     "id": "C25",
-    "tselec": "Tarea C2",
+    "tselec": "C2 (Maestría)",
     "opcion" : 5,
     "selec":"Opción 5. Mucha gente afirma que, aunque se ha facilitado la interconectividad entre diferentes culturas, etnias y pueblos, cada uno mantiene su idiosincrasia. Escriba una descripción sobre la idiosincrasia de la gente de su país."
   }

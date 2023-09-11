@@ -1,11 +1,7 @@
 [
   {
-    "id": "0",
-    "selec": "Cualquiera"
-  },
-  {
     "id": "1",
-    "selec": "Expositivo-descriptivo"
+    "selec": "Expositivo y descriptivo"
   },
   {
     "id": "2",

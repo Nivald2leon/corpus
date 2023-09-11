@@ -14,10 +14,12 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 let edad,
   estancia,
   motivacion,
-  tiempo = null;
+  tiempo, compet, limpiar = null;
 const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
+
+  //const formikContext = useFormikContext();
   //carga inicial cuando vuelve a entrar
-  const [selectedData, setSelectedData] = useState({
+  /* const [selectedData, setSelectedData] = useState({
     genero: opciones && opciones.genero ? opciones.genero : "",
     tarea: opciones && opciones.tarea ? opciones.tarea : "",
     sexo: opciones && opciones.sexo ? opciones.sexo : "",
@@ -31,8 +33,25 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
     palabras: opciones && opciones.palabras ? opciones.palabras : "",
     motivacion: opciones && opciones.motivacion ? opciones.motivacion : "",
   });
+  */
+   const [selectedData, setSelectedData] = useState({
+    genero:  "",
+    tarea:  "",
+    sexo:  "",
+    edad:  "",
+    nivel:  "",
+    segunda: "",
+    dominio:  "",
+    compet:  "",
+    tiempo:  "",
+    estancia: "",
+    palabras:  "",
+    motivacion:  "",
+  });
+  
+  const [arrSubtarea, setArrSubtarea] = useState([]); 
 
-  const initialValues = {
+/*   const initialValues = {
     genero: opciones?.genero || "",
     tarea: opciones?.tarea || "",
     sexo: opciones?.sexo || "",
@@ -45,56 +64,79 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
     estancia: opciones?.estancia || "",
     palabras: opciones?.palabras || "",
     motivacion: opciones?.motivacion || "",
+  }; 
+ */
+   const initialValues = {
+    genero:  "",
+    tarea:  "",
+    sexo:  "",
+    edad: "",
+    nivel:  "",
+    segunda: "",
+    dominio:  "",
+    compet:  "",
+    tiempo:  "",
+    estancia: "",
+    palabras:  "",
+    motivacion:  "",
   };
-
+ 
   //Actualizar el estado cuando no se entra por primera vez
   useEffect(() => {
-    console.log(opciones);
     if (opciones !== null) {
       setSelectedData(opciones);
     }
-    console.log(opciones);
     onDataChange(opciones);
-  }, [opciones, edad, estancia, motivacion]);
 
-  const handlelLimpiar = async (values) => {
-    setSelectedData({
-      genero: "",
-      tarea: "",
-      sexo: "",
-      edad: "",
-      nivel: "",
-      segunda: "",
-      dominio: "",
-      compet: "",
-      tiempo: "",
-      estancia: "",
-      palabras: "",
-      motivacion: "",
-    });
-    const initialValues = {
-      genero: "",
-      tarea: "",
-      sexo: "",
-      edad: "",
-      nivel: "",
-      segunda: "",
-      dominio: "",
-      compet: "",
-      tiempo: "",
-      estancia: "",
-      palabras: "",
-      motivacion: "",
-    };
+  }, [opciones, edad, estancia, motivacion, compet, limpiar]);
 
-    console.log(initialValues);
-    setSelectedData(initialValues);
-    console.log(selectedData);
-    onDataChange(initialValues);
+
+   useEffect(() => {
+    edad = "";
+    estancia = "";
+    motivacion = "";
+    tiempo = "";
+    compet = "";
+    
+  }, []); 
+  
+
+  const handlelLimpiar = async (onSumitPropos) => {
+    try {
+      edad = "";
+      estancia = "";
+      motivacion = "";
+      tiempo = "";
+      compet = "";
+      limpiar=1
+
+      const initialValues = {
+        genero:  "",
+        tarea:  "",
+        sexo:  "",
+        edad: "",
+        nivel:  "",
+        segunda: "",
+        dominio:  "",
+        compet:  "",
+        tiempo:  "",
+        estancia: "",
+        palabras:  "",
+        motivacion:  "",
+      };
+      setSelectedData(initialValues)
+
+      onDataChange(initialValues);
+      onSumitPropos.resetForm
+    } 
+ 
+    catch (error) {
+      console.error("Error en el manejo del formulario:", error);
+    }
   };
 
+
   const handleSubmit = async (values, e) => {
-    console.log(values);
     try {
       const updatedData = {
         genero: values.genero !== null ? values.genero : "",
@@ -104,35 +146,39 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
         nivel: values.nivel !== null ? values.nivel : "",
         segunda: values.segunda !== null ? values.segunda : "",
         dominio: values.dominio !== null ? values.dominio : "",
-        compet: values.compet !== null ? values.compet : "",
+        compet: compet !== null ? compet : "",
         tiempo: tiempo !== null ? tiempo : "",
         estancia: estancia !== null ? estancia : "",
         palabras: values.palabras !== null ? values.palabras : "",
         motivacion: motivacion !== null ? motivacion : "",
       };
-      console.log(values.genero);
-      console.log(values.palabras);
 
       // Actualiza selectedData en el estado
       setSelectedData((prevValues) => ({
         ...prevValues,
         ...updatedData,
       }));
-      console.log("HandleSumit");
-      // Espera a que selectedData se actualice y luego llama a onDataChange
 
       await onDataChange(updatedData);
 
-      console.log(selectedData);
       // Actualizando el estado con los valores del formulario
       onhandleMove(1);
-      console.log(values.genero);
-      console.log(values.palabras);
     } catch (error) {
       console.error("Error en el manejo del formulario:", error);
     }
   };
 
+  
+
+  const handlecompet = (value) => {
+    const arraySubt = arraySubtarea.filter((item) => item.tselec === value);
+      compet= value,
+     setArrSubtarea(arraySubt)
+    };
+  
+
+
+  
 
   //Validacion de campos obligatorios
   const validateForm = (values) => {
@@ -164,14 +210,14 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                     CORPUS A
                   </h4>
                   <button
-                    href="#Buscar"
-                    type="button"
+                    type="reset"
                     className="mb-2 btn-nav-buscar"
                     style={{
                       marginLeft: "auto",
                       backgroundColor: "red",
                     }}
-                    onClick={handlelLimpiar}
+                    onClick={handlelLimpiar} 
+                    
                   >
                     Limpiar
                   </button>
@@ -193,7 +239,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                   className="error-message"
                   style={{ color: "red" }}
                 />
-
+ 
                 <div
                   className="container d-flex align-items-center"
                   style={{
@@ -203,6 +249,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                 >
                   <div className="row">
                     <div className="col-md-7 col-lg-6">
+
                       <div
                         className="form-group mt-2"
                         style={{
@@ -212,13 +259,17 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="compet" style={{ fontSize: "14px" }}>
-                          Nivel de competencia en español:
+                          Nivel de competencia en español
                         </label>
                         <Field
                           as="select"
                           className="selec-simple"
                           name="compet"
                           id="compet"
+                          value={compet}
+                           onChange={(value) => {
+                             handlecompet(value.target.value);
+                          }}
                         >
                           <option value=""></option>{" "}
                           {arrayCompet.map((opcion) => (
@@ -238,7 +289,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="tarea" style={{ fontSize: "14px" }}>
-                          Tarea de redacción:
+                          Tarea de redacción
                         </label>
                         <Field
                           as="select"
@@ -247,7 +298,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                           id="tarea"
                         >
                           <option value=""></option>{" "}
-                          {arraySubtarea.map((opcion) => (
+                          {arrSubtarea.map((opcion) => (
                             <option key={opcion.id} value={opcion.selec}>
                               {opcion.selec}
                             </option>
@@ -264,7 +315,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="genero" style={{ fontSize: "14px" }}>
-                          Género textual:
+                          Género textual
                         </label>
                         <Field
                           as="select"
@@ -290,7 +341,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="sexo" style={{ fontSize: "14px" }}>
-                          Sexo :
+                          Sexo 
                         </label>
                         <Field
                           as="select"
@@ -315,7 +366,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="nivel" style={{ fontSize: "14px" }}>
-                          Nivel de instrucción:
+                          Nivel de instrucción
                         </label>
                         <Field
                           as="select"
@@ -340,7 +391,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="dominio" style={{ fontSize: "14px" }}>
-                          Dominio de lenguas extranjeras :
+                          Dominio de lenguas extranjeras 
                         </label>
                         <Field
                           as="select"
@@ -368,7 +419,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="palabras" style={{ fontSize: "14px" }}>
-                          <a>Palabras: </a>
+                          <a>Palabras </a>
                           <a style={{ color: "red" }}>(campo obligatorio)</a>
                         </label>
                         <Field
@@ -395,7 +446,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="segunda" style={{ fontSize: "14px" }}>
-                          Segunda lengua materna:
+                          Segunda lengua materna
                         </label>
                         <Field
                           as="select"
@@ -421,13 +472,14 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="edad" style={{ fontSize: "14px" }}>
-                          Edad:&nbsp;&nbsp;{edad}
+                          Edad&nbsp;&nbsp;{edad}
                         </label>
                         <Slider
                           name="edad"
                           id="edad"
                           min={17}
                           max={28}
+                          value={edad}
                           defaultValue={edad}
                           onChange={(value) => {
                             edad = value; setSelectedData({edad: value,});
@@ -445,13 +497,14 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="estancia" style={{ fontSize: "14px" }}>
-                          Estancia:&nbsp;&nbsp;{estancia}
+                          Estancia&nbsp;&nbsp;{estancia}
                         </label>
                         <Slider
                           name="estancia"
                           id="estancia"
                           min={0}
                           max={11}
+                          value={estancia} 
                           defaultValue={estancia}
                           onChange={(value) => {
                             estancia = value; setSelectedData({estancia: value,});
@@ -472,13 +525,14 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                           htmlFor="motivacion"
                           style={{ fontSize: "14px" }}
                         >
-                          Motivación por el estudio del español :&nbsp;&nbsp;{motivacion}
+                          Motivación por el estudio del español &nbsp;&nbsp;{motivacion}
                         </label>
                         <Slider
                           name="motivacion"
                           id="motivacion"
                           min={0}
                           max={11}
+                          value={motivacion}
                           defaultValue={motivacion}
                           onChange={(value) => {
                             motivacion = value; setSelectedData({motivacion: value,});
@@ -497,13 +551,14 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         }}
                       >
                         <label htmlFor="tiempo" style={{ fontSize: "14px" }}>
-                          Años estudiando español :&nbsp;&nbsp;{tiempo}
+                          Años estudiando español &nbsp;&nbsp;{tiempo}
                         </label>
                         <Slider
                           name="tiempo"
                           id="tiempo"
                           min={0}
                           max={11}
+                          value={tiempo}
                           defaultValue={tiempo}
                           onChange={(value) => {
                             tiempo = value; setSelectedData({tiempo: value,});
@@ -511,13 +566,6 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                         />
                          <Etiqueta tipo={1}/>
                        </div>
-
-
-
-
-
-
-
                     </div>
                   </div>
                 </div>

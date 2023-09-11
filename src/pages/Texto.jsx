@@ -3,6 +3,7 @@ import subtarea from "../array/subtarea.json";
 
 
 const Texto = ({ opciones, item }) => {
+  
   const tareaRed = (item) => {
     const tarea = subtarea
       .filter((elemento) => elemento.id === item)
@@ -54,8 +55,8 @@ const Texto = ({ opciones, item }) => {
               >
                 <div claseName="container">
                   <a>Contexto del ejemplar: </a>
-                  <a>{item.edad}</a>
-                  <a> de la seleción anterior: </a>
+                  <a>{item.id}</a>
+
                 </div>
               </div>
 
@@ -85,12 +86,6 @@ const Texto = ({ opciones, item }) => {
                     <div claseName="container">
                       <a className="titulo-texto">Años estudiando español: </a>
                       <a>{item.tiempo}</a>
-                    </div>
-                    <div claseName="container">
-                      <a className="titulo-texto">
-                        Nivel de competencia en español:{" "}
-                      </a>
-                      <a>{item.compet}</a>
                     </div>
                   </div>
                   <div className="col-md-1 col-lg-7 ">
@@ -123,13 +118,15 @@ const Texto = ({ opciones, item }) => {
                       </a>
                       <a>{item.motivacion}</a>
                     </div>
-                    <div claseName="container">
+                  </div>
+                </div>
+                <div claseName="container">
                       <a className="titulo-texto">Palabras: </a>
                       <a>{opciones.palabras}</a>
                     </div>
-                  </div>
+
                 </div>
-                </div>
+
                 <div
                   className="encabezado"
                   style={{ textAlign: "center", lineHeight: "1.5" }}
