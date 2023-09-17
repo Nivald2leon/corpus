@@ -1,6 +1,6 @@
 import etapas from "../array/etapas.json";
 import Image from "next/image";
-import etapa from "/public/imagen/etapas.jpg";
+import etapa from "@/images/etapas.jpg";
 
 const Tareas = () => {
   return (
@@ -8,7 +8,7 @@ const Tareas = () => {
       id="Etapas"
       className="bg-fixed hero-section division wow fadeIn"
       style={{
-        backgroundImage: `url('/imagen/ChinoEspañolok.jpg')`,
+        backgroundImage: `url('/imagen/ChinoEspañolok2.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
@@ -19,13 +19,14 @@ const Tareas = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <h2>Etapas</h2>
+              <h3>Etapas</h3>
               {etapas.map((item, index) => (
                 <div
                   style={{ textAlign: "justify", lineHeight: "2" }}
                   key={index}
                 >
-                  <h4>{item.Titulo}</h4>
+                  <h5><strong>{item.Titulo}</strong></h5>
+                  
                   <p>{item.etapa}</p>
                   {item.id==0 ? <Image src={etapa} alt="etapa" className="wow fadeInLeft img-fluid" /> : null}
                   <ol>

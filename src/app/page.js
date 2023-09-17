@@ -3,9 +3,9 @@
 import "../styles/corpus.css"
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Efecto from "../components/Efecto";
+import Efecto from "/src/app/components/Efecto"
 import Inicio from "../pages/Inicio";
-import Navbar from "../components/Navbar";
+import Navbar from "/src/app/components/Navbar";
 import Cache from "../pages/Cache";
 import Objetivo from "../pages/Objetivo";
 import Diseño from "../pages/Diseño";
@@ -14,7 +14,9 @@ import Etapas from "../pages/Etapas";
 import Tareas from "../pages/Tareas";
 import Metadatos from "../pages/Metadatos";
 import Estadistica from "../pages/Estadistica";
-import  Buscar from "../pages/Buscar";
+import Investigacion from "../pages/Investigacion";
+import Contacto from "../pages/Contacto";
+import  Guia from "../pages/Guia";
 import "../styles/animate.css";
 
 
@@ -33,6 +35,9 @@ export default function Home() {
         <Metadatos/>
         <Tareas/>
         <Estadistica/>
+        <Guia/>
+        <Investigacion/>
+        <Contacto/>
        </div> 
     </div>
   )

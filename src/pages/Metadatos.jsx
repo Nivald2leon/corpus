@@ -1,9 +1,9 @@
 import Image from "next/image";
-import metadatos1 from "/public/imagen/metadatos1.jpg";
-import metadatos2 from "/public/imagen/metadatos2.jpg";
-import metadatos3 from "/public/imagen/metadatos3.jpg";
-import metadatos4 from "/public/imagen/metadatos4.jpg";
-import metadatos5 from "/public/imagen/metadatos5.jpg";
+import metadatos1 from "@/images/metadatos1.jpg";
+import metadatos2 from "@/images/metadatos2.jpg";
+import metadatos3 from "@/images/metadatos3.jpg";
+import metadatos4 from "@/images/metadatos4.jpg";
+import metadatos5 from "@/images/metadatos5.jpg";
 import metadatos from "../array/metadatos.json";
 
 const Metadatos = () => {
@@ -12,7 +12,7 @@ const Metadatos = () => {
       id="Metadatos"
       className="bg-fixed hero-section division wow zoomIn"
       style={{
-        backgroundImage: `url('/imagen/ChinoEspañolok.jpg')`,
+        backgroundImage: `url('/imagen/ChinoEspañolok3.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
@@ -21,7 +21,6 @@ const Metadatos = () => {
     >
       <div className="container">
         <div className="row d-flex align-items-center">
-          {/* <div className="col-md-1 col-lg-1"></div> */}
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache">
               {metadatos.map((item, index) => (

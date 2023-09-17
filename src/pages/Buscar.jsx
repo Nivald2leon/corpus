@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import React, { useState } from "react";
 import "../styles/corpus.css";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "@/components/Header";
-import Formulario from "@/components/formulario";
-import Texto from "./Texto";
-import Encabezado from "../components/Encabezado";
+import Header from "@/app/components/Header";
+import Formulario from "@/app/components/formulario";
+import Texto from "@/pages/Texto";
+import Encabezado from "@/app/components/Encabezado";
 
-import Animation from "../components/Animation";
+
 import "../styles/animate.css";
 
 const Buscar = () => {
   const [opciones, setOpciones] = useState(null);
-  const [visibleNext, setVisibleNext] = useState(null);
   const [currentComponent, setCurrentComponent] = useState(1);
   const [selecteditem, setSelecteditem] = useState(null);
 
@@ -45,7 +43,8 @@ const Buscar = () => {
         id="Buscar"
         className="bg-fixed hero-section division wow zoomIn"
         style={{
-          backgroundImage: `url('/imagen/buscar.png')`,
+          
+          backgroundImage: `url('/imagen/buscarfondo.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "100vh",
@@ -54,7 +53,7 @@ const Buscar = () => {
       >
 
 
-
+      
 
         <div style={{zIndex:"1"}}>
         <div className="margen-superior"></div>

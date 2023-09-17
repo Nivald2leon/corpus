@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "Titulo1": "Guia de uso ",
+    "parrafo1": "Para buscar en <strong>SUBCACHELE Escrito</strong>, haga clic en <strong>CACHE</strong> en el menú principal del sitio web. Cuando se desplegue el submenú con los 8 subcorpus que integran CACHE, dé clic en <strong>SUBCACHELE Escrito. </strong>",
+    "parrafo2": "Entonces, la página se redireccionará a una página interna de búsqueda de <strong>SUBCACHELE Escrito, </strong> donde puede hacer una búsqueda avanzada por palabras o grupos de palabras a partir de varios filtros que permiten restringir su búsqueda de acuerdo con las necesidades de investigación. ",
+    "parrafo3": "La interfaz web ha sido diseñada para ser lo más simple e intuitiva posible. Por ello, solo son válidas dos aclaraciones:", 
+    "lista1": "El campo “Palabras” es obligatorio:",
+    "lista2": "Para poder seleccionar la tarea de redacción primero hay que elegir el nivel de competencia en español:",
+    "parrafo4": "El buscador de <strong>SUBCACHELE Escrito </strong> permite realizar búsquedas avanzadas a partir de filtros gracias a la codificación de los textos a partir de los metadatos lingüísticos y extralingüísticos establecidos desde el diseño de CACHE. Así, por ejemplo, es posible hacer una búsqueda de la construcción verbal “Creo que” seleccionando el nivel de competencia de los estudiantes, la tarea de redacción, el género textual predominante, así como filtrando mediante otras variables como el sexo, edad y nivel de instrucción de los informantes, etcétera. Seguidamente, se ofrece un ejemplo de la búsqueda de “Creo que” seleccionando metadatos específicos. ",
+    "parrafo5": "", 
+    "parrafo6": "Una vez seleccionados estos metadatos a partir de los cuales se quiere realizar la búsqueda de “Creo que”, se da clic en el botón <strong>BUSCAR</strong> y aparece una lista de ocurrencias de “Creo que”.  ", 
+    "parrafo7": "Al dar clic sobre cualquiera de estas ocurrencias de “Creo que” se redirige a una página interna donde aparece el texto completo donde se encuentra esa ocurrencia seleccionada y todos los metadatos de ese texto. Puede observarse en la imagen que, además, el elemento lingüístico objeto de búsqueda aparece resaltado en <strong>negrita. </strong>"
+  }  
+]

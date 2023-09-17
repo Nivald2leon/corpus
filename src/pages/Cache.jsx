@@ -14,7 +14,6 @@ const Cache = () => {
     >
       <div className="container">
         <div className="row d-flex align-items-center">
-          {/* <div className="col-md-1 col-lg-1"></div> */}
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache">
               

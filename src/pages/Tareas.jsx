@@ -6,7 +6,7 @@ const Tareas = () => {
       id="Tareas"
       className="bg-fixed hero-section division wow fadeIn"
       style={{
-        backgroundImage: `url('/imagen/ChinoEspañolok.jpg')`,
+        backgroundImage: `url('/imagen/ChinoEspañolok5.jpg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "100vh",
@@ -17,14 +17,15 @@ const Tareas = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <h2>Tareas</h2>
+              <h3>Tareas</h3>
               {tareas.map((item, index) => (
                 <div
                   style={{ textAlign: "justify", lineHeight: "2" }}
                   key={index}
                 >
                   <br></br>
-                  <h4>{item.tarea}</h4>
+                  <h5><strong>{item.tarea}</strong></h5>
+ 
                   <h5>{item.subtarea1}</h5>
                   <p dangerouslySetInnerHTML={{ __html: item.er1 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o11 }}></p>
