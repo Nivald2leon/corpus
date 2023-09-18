@@ -1,37 +1,57 @@
 import { useState } from "react";
 import Image from "next/image";
 import contacto from "../images/contacto.jpg";
-import { useForm } from "@formspree/react";
+import { useForm, ValidationError } from '@formspree/react';
 
+let mensaje = [
+  {
+    name: "nivaldo León López",
+    email: "nival2leon@gmail.com",
+    message: "dfsfgsd",
+  },
+];
+
+let mensaje1 = "";
 const Contacto = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+
+/*   const [state, handleSubmit] = useForm("xknlzqyd");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  } */
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleFormSubmit = async (e) => {
+   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const { name, email, message } = e.target.elements;
-  
-    const modifiedMessage = message.value +"";
-    
-  
-    // Llama a handleSubmit con los datos modificados
-     await handleSubmit({
-      Nombre: name.value,
-      Correo: email.value,
-      Texto: modifiedMessage,
-    }); 
-    setIsSubmitting(true);
 
+    setIsSubmitting(true);
+    console.log(JSON.stringify({ mensaje }));
+    console.log(formData);
+
+    const res = await fetch("/api/send", {
+      method: "POST",
+      body:  JSON.stringify({ mensaje }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const data = await res.json();
+    console.log(data);
+    console.log(res);
+    console.log("Datos del formulario:", formData);
 
     setTimeout(async () => {
       
@@ -42,16 +62,9 @@ const Contacto = () => {
       });
 
       setIsSubmitting(false);
-    }, 2000);
-  };    
-  
-  //const [state, handleSubmit] = useForm("xknlzqyd"); ///mio
-  const [state, handleSubmit] = useForm("mrgwlynz"); //chino
-
-  if (state.succeeded) {
-    //return <p>Gracias por Contactarnos!</p>;
-  }
-
+    }, 2000); 
+  };
+ 
   return (
     <section
       id="Contacto"
@@ -94,11 +107,7 @@ const Contacto = () => {
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
               <div style={{ textAlign: "justify", lineHeight: "2" }}>
                 <h4>Formulario de contacto</h4>
-                <h1 style={{ color:"red"}}>
-                {isSubmitting ? "Gracias por Contactarnos!..." : "."}
-                </h1>
-                
-                <form onSubmit={handleFormSubmit}>
+                <form onSubmit={handleSubmit}>
                   <div
                     className="form-group mt-2"
                     style={{
@@ -120,6 +129,7 @@ const Contacto = () => {
                       required
                     />
                   </div>
+
                   <div
                     className="form-group mt-2"
                     style={{
@@ -141,6 +151,7 @@ const Contacto = () => {
                       required
                     />
                   </div>
+
                   <div
                     className="form-group mt-2"
                     style={{
@@ -153,7 +164,7 @@ const Contacto = () => {
                     <label htmlFor="message" style={{ fontSize: "14px" }}>
                       Mensaje
                     </label>
-                    <textarea
+                    <input
                       className="selec-correo pl-3"
                       id="message"
                       name="message"
@@ -161,16 +172,18 @@ const Contacto = () => {
                       onChange={handleChange}
                       required
                       style={{ height: "240px" }}
-                    ></textarea>
+                    ></input>
                   </div>
+
+ 
                   <button
-                    type="submit"
-                    disabled={isSubmitting}
                     className="mb-2 mt-2 btn-nav-buscar"
                     style={{
                       marginLeft: "auto",
                       backgroundColor: "red",
                     }}
+                    type="submit"
+                    disabled={isSubmitting}
                   >
                     {isSubmitting ? "Enviando..." : "Enviar"}
                   </button>

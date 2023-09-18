@@ -1,6 +1,6 @@
 import diseño from "../array/diseño.json";
 import Image from "next/image";
-import tabla from "@/images/tabla.jpg";
+import tabla from "../images/tabla.jpg";
 
 
 const Diseño = () => {

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import metadatos1 from "@/images/metadatos1.jpg";
-import metadatos2 from "@/images/metadatos2.jpg";
-import metadatos3 from "@/images/metadatos3.jpg";
-import metadatos4 from "@/images/metadatos4.jpg";
-import metadatos5 from "@/images/metadatos5.jpg";
+import metadatos1 from "../images/metadatos1.jpg";
+import metadatos2 from "../images/metadatos2.jpg";
+import metadatos3 from "../images/metadatos3.jpg";
+import metadatos4 from "../images/metadatos4.jpg";
+import metadatos5 from "../images/metadatos5.jpg";
 import metadatos from "../array/metadatos.json";
 
 const Metadatos = () => {

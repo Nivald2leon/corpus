@@ -1,14 +1,15 @@
+// eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useState, useEffect } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import Etiqueta from "./Etiqueta";
-import arrayGenero from "@/array/genero.json";
-import arraySubtarea from "@/array/subtarea.json";
-import arraySexo from "@/array/sexo.json";
-import arrayNivel from "@/array/nivel.json";
-import arraySegunda from "@/array/segunda.json";
-import arrayDominio from "@/array/dominio.json";
-import arrayCompet from "@/array/compet.json";
+import arrayGenero from "../../array/genero.json";
+import arraySubtarea from "../../array/subtarea.json";
+import arraySexo from "../../array/sexo.json";
+import arrayNivel from "../../array/nivel.json";
+import arraySegunda from "../../array/segunda.json";
+import arrayDominio from "../../array/dominio.json";
+import arrayCompet from "../../array/compet.json";
 
 import { Formik, Field, Form, ErrorMessage } from "formik";
 let edad,
@@ -124,6 +125,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
       setSelectedData(initialValues);
 
       onDataChange(initialValues);
+      
       onSumitPropos.resetForm;
     } catch (error) {
       console.error("Error en el manejo del formulario:", error);
@@ -215,7 +217,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                 </div>
 
                 <h5 className="text-center">
-                  Como Lengua Extranjera. Componente escrito
+                Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera. Componente Escrito.
                 </h5>
 
                 <ErrorMessage

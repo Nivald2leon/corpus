@@ -1,6 +1,6 @@
 import etapas from "../array/etapas.json";
 import Image from "next/image";
-import etapa from "@/images/etapas.jpg";
+import etapa from "../images/etapas.jpg";
 
 const Tareas = () => {
   return (

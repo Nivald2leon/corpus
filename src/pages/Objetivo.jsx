@@ -1,6 +1,6 @@
 import objetivo from "../array/objetivo.json";
 import Image from "next/image";
-import imagen1 from "@/images/ChinoEspañol2.jpg";
+import imagen1 from "../images/ChinoEspañol2.jpg";
 
 const Objetivo = () => {
   return (

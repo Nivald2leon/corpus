@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Animation from "@/app/components/Animation";
+import Animation from "./Animation";
 
 const Efecto = () => {
   const [showLoading, setShowLoading] = useState(true);

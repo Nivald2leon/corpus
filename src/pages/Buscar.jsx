@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../styles/corpus.css";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "@/app/components/Header";
-import Formulario from "@/app/components/formulario";
-import Texto from "@/pages/Texto";
-import Encabezado from "@/app/components/Encabezado";
+import Header from "../app/components/Header";
+import Formulario from "../app/components/formulario";
+import Texto from "../pages/Texto";
+import Encabezado from "../app/components/Encabezado";
 
 
 import "../styles/animate.css";

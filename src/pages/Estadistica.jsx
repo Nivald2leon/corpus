@@ -1,21 +1,21 @@
 import estadistica from "../array/estadistica.json";
 import Image from "next/image";
 
-import estad1 from "@/images/estad1.jpg";
-import estad2 from "@/images/estad2.jpg";
-import estad3 from "@/images/estad3.jpg";
-import estad4 from "@/images/estad4.jpg";
-import estad5 from "@/images/estad5.jpg";
-import estad6 from "@/images/estad6.jpg";
-import estad7 from "@/images/estad7.jpg";
-import estad8 from "@/images/estad8.jpg";
-import estad9 from "@/images/estad9.jpg";
-import estad10 from "@/images/estad10.jpg";
-import estad11 from "@/images/estad11.jpg";
-import estad12 from "@/images/estad12.jpg";
-import estad13 from "@/images/estad13.jpg";
-import estad14 from "@/images/estad14.jpg";
-import estad15 from "@/images/estad15.jpg";
+import estad1 from "../images/estad1.jpg";
+import estad2 from "../images/estad2.jpg";
+import estad3 from "../images/estad3.jpg";
+import estad4 from "../images/estad4.jpg";
+import estad5 from "../images/estad5.jpg";
+import estad6 from "../images/estad6.jpg";
+import estad7 from "../images/estad7.jpg";
+import estad8 from "../images/estad8.jpg";
+import estad9 from "../images/estad9.jpg";
+import estad10 from "../images/estad10.jpg";
+import estad11 from "../images/estad11.jpg";
+import estad12 from "../images/estad12.jpg";
+import estad13 from "../images/estad13.jpg";
+import estad14 from "../images/estad14.jpg";
+import estad15 from "../images/estad15.jpg";
 import Efecto from "/src/app/components/Efecto";
 
 const Estadistica = () => {

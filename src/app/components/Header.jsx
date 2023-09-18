@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Progress from "./Progress";
-import Efecto from "@/app/components/Efecto";
-import Logo from "@/app/components/Logo";
+import Efecto from "../../app/components/Efecto";
+import Logo from "../../app/components/Logo";
 
 const Header = ({ page, onhandleMove }) => {
   const handlePrevious = () => {

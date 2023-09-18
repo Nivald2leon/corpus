@@ -1,7 +1,7 @@
-import texto from "@/array/texto.json";
+import texto from "../../array/texto.json";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "@/images/logoChinaEspaña.jpg";
+import logo from "../../images/logoChinaEspaña.jpg";
 
 
 const Encabezado = ({ opciones, onitemClick}) => {
