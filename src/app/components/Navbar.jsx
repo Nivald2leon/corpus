@@ -10,6 +10,9 @@ function NavBar() {
   const toggleSubMenu = (menuItem) => {
     setActiveMenuItem(activeMenuItem === menuItem ? null : menuItem);
   };
+  const closeSubMenu = () => {
+    setActiveMenuItem(null); // Cierra el menú desplegable
+  };
 
   return (
     <div>
@@ -17,13 +20,14 @@ function NavBar() {
         <div className="justify-between px-4 mx-auto lg:max-w-8xl md:items-center md:flex md:px-8">
           <div className="navbar  navbar-dark ">
             
-            <div className="items-center justify-between py-1 md:py-5 md:block">
+            <div className="items-center justify-between py-1 md:py-5 md:block ">
               <Image
                 src="/imagen/logocache.png"
                 width={120}
                 height={120}
                 alt="logo"
               />
+              
               <b
                 href="#"
                 onClick={() => {
@@ -37,12 +41,13 @@ function NavBar() {
               >
                 Corpus de Aprendientes Chinos de Español
               </b>
+              <br/>
 
-              <div className="md:hidden ">
+              <div className="md:hidden "> 
                 <button
-                  className=" ml-80 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className=" ml-80 text-gray-700 rounded-md outline-none focus:border-gray-50 focus:border"
                   onClick={() => setNavbar(!navbar)}
-                  style={{ justifyContent: "right" }}
+                  
                 >
                   {navbar ? (
                     <Image src="/close.svg" width={30} height={30} alt="logo" />
@@ -56,7 +61,7 @@ function NavBar() {
                     />
                   )}
                 </button>
-              </div>
+              </div> 
             </div>
 
 
@@ -67,15 +72,21 @@ function NavBar() {
                 navbar ? "p-12 md:p-0 block" : "hidden"
               }`}
             >
-              <ul className="mt-2 h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="nav-item menup pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+              <ul 
+                className="mt-2 h-screen md:h-auto items-center justify-center md:flex "
+                onMouseLeave={closeSubMenu}
+              >
+                <li className="nav-item menup text-ml  text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-900  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <a
                     href="#"
                     onClick={() => {
                       toggleSubMenu("Inicio");
                       setNavbar(!navbar);
                     }}
-                    className={`nav-link ${
+                    style={{
+                      fontSize: "px",
+                    }}
+                    className={ ` nav-link ${
                       activeMenuItem === "Inicio" ? "active" : ""
                     }`}
                   >
@@ -83,7 +94,7 @@ function NavBar() {
                   </a>
                 </li>
 
-                <li className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0 hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent ">
+                <li className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center  border-b-2 md:border-b-0 hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent ">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Cache" ? "active" : ""
@@ -125,7 +136,7 @@ function NavBar() {
                   </a>
                 </li>
 
-                <li className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent ">
+                <li className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent ">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Diseño" ? "active" : ""
@@ -209,14 +220,14 @@ function NavBar() {
                   </a>
                 </li>
 
-                <li className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Estadistica" ? "active" : ""
                     }`}
                     href="#Estadistica"
                     onClick={() => {
-                      toggleSubMenu("Buscar");
+                      toggleSubMenu("Estadistica");
                       setNavbar(!navbar);
                     }}
                   >
@@ -225,7 +236,7 @@ function NavBar() {
                 </li>
 
                 <li
-                  className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center border-b-2 
+                  className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center border-b-2 
                 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent "
                 >
                   <a
@@ -353,7 +364,7 @@ function NavBar() {
                   </a>
                 </li>
 
-                <li className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Guia" ? "active" : ""
@@ -369,7 +380,7 @@ function NavBar() {
 
                 </li>
 
-                <li className="nav-item menup pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="nav-item menup pb-6 text-ml text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Investigaciones" ? "active" : ""
@@ -384,7 +395,7 @@ function NavBar() {
                   </a>
                 </li>
 
-                <li className="nav-item menup  pb-6 text-xl text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
+                <li className="nav-item menup  pb-6 text-ml text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-purple-600  border-purple-900  md:hover:text-purple-600 md:hover:bg-transparent">
                   <a
                     className={`nav-link ${
                       activeMenuItem === "Contacto" ? "active" : ""

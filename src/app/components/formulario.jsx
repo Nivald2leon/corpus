@@ -1,4 +1,3 @@
-// eslint-disable-next-line react-hooks/exhaustive-deps
 import React, { useState, useEffect } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
@@ -83,12 +82,12 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
     motivacion: "",
   };
 
-  //Actualizar el estado cuando no se entra por primera vez
   useEffect(() => {
     if (opciones !== null) {
       setSelectedData(opciones);
     }
     onDataChange(opciones);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [opciones, edad, estancia, motivacion, compet, limpiar]);
 
   useEffect(() => {
@@ -125,7 +124,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
       setSelectedData(initialValues);
 
       onDataChange(initialValues);
-      
+
       onSumitPropos.resetForm;
     } catch (error) {
       console.error("Error en el manejo del formulario:", error);
@@ -180,10 +179,10 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
   };
 
   return (
-    <div className="  menu clearfix form-corpus">
+    <div className="  menu clearfix form-corpus ">
       <div className=" row">
-        <div className="col-sd-0 col-md-1 col-lg-2"></div>
-        <div className="mt-2 col-md-7 col-lg-7 col-sm-4">
+        <div className="col-sd-0 col-md-0 col-lg-1"></div>
+        <div className="mt-7 col-md-7 col-lg-7 col-sm-12 ">
           <Formik
             initialValues={initialValues}
             onSubmit={handleSubmit}
@@ -191,44 +190,55 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
           >
             {(formik) => (
               <Form>
-                <div className="container d-flex align-items-center">
-                  <button
-                    type="reset"
-                    className="mb-2 btn-nav-buscar"
-                    style={{
-                      marginLeft: "auto",
-                      backgroundColor: "red",
-                    }}
-                    onClick={handlelLimpiar}
-                  >
-                    Limpiar
-                  </button>
+                <div className=" container ">
+                  <div className="flex  my-2 mr-16 fixed-button">
 
-                  <button
-                    type="submit"
-                    className="mb-2 btn-nav-buscar"
-                    style={{
-                      marginLeft: "auto",
-                      backgroundColor: "red",
-                    }}
-                  >
-                    Buscar
-                  </button>
+                      <button
+                        type="reset"
+                        className=" btn-nav-buscar "
+                        style={{
+                          border: "2px solid red",
+                        }}
+                        onClick={handlelLimpiar}
+                      >
+                        Limpiar
+                      </button>
+                    
+                    <br />
+                    <div className="ml-20">
+                      <button
+                        type="submit"
+                        className="btn-nav-buscar "
+                        style={{
+                          border: "2px solid red",
+                        }}
+                      >
+                        Buscar
+                      </button>
+                    </div>
+                  </div>
                 </div>
-
-                <h5 className="text-center">
-                Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera. Componente Escrito.
-                </h5>
-
-                <ErrorMessage
-                  name="palabras"
-                  component="div"
-                  className="error-message"
-                  style={{ color: "red" }}
-                />
+                {formik.errors.palabras ? (
+                  <>
+                    <br />
+                    <br />
+                    <ErrorMessage
+                      name="palabras"
+                      component="b"
+                      className="error-message mt-2"
+                      style={{ color: "red", marginLeft: "5px" }}
+                    />
+                  </>
+                ) : (
+                  <>
+                    <br />
+                    <br />
+                    <br />
+                  </>
+                )}
 
                 <div
-                  className="container d-flex align-items-center pr-2 pb-1"
+                  className="d-flex align-items-center px-2 pb-1 "
                   style={{
                     border: "2px solid red",
                   }}
@@ -558,6 +568,10 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                     </div>
                   </div>
                 </div>
+
+                <br />
+
+                <br />
               </Form>
             )}
           </Formik>

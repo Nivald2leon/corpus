@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Animation from "./Animation";
-
+/* eslint-disable no-alert, no-console */
 const Efecto = () => {
+  
   const [showLoading, setShowLoading] = useState(true);
 
   let WOW;
@@ -36,5 +37,5 @@ const Efecto = () => {
 
   return <>{showLoading && <Animation />}</>;
 };
-
+/* eslint-enable no-alert */
 export default Efecto;

@@ -240,7 +240,7 @@
   position: absolute;
   top: 100%; /* Posiciona el submenú debajo del enlace del menú principal */
   left: 0;
-  width: 150%;
+  width: 180%;
   background-color: red;
   color: white;
   border: 1px solid #ccc;
@@ -262,7 +262,7 @@
 }
 .custom-navbar {
   background-color: red; /* Color de fondo rojo */
-  height: 60px; /* Altura personalizada en píxeles */
+  height: 70px; /* Altura personalizada en píxeles */
 }
 
 .menup {
@@ -360,7 +360,7 @@ li a:hover {
 
 .form-corpus {
   
-  max-width: 1140px;
+  max-width: 1150px;
   padding: 0 15px;
   
 }
@@ -371,7 +371,7 @@ li a:hover {
   color: white;
   height: 40px;
   border-radius: var(--bs-border-radius);
-  background-color: red; 
+  background-color: white; 
   border-color:red;  
   width: 100px;
 }
@@ -383,8 +383,8 @@ li a:hover {
 }
 
 .btn-nav-buscar{
-  color: white;
-  background-color:red;
+  color: red;
+  background-color:white;
   border-color:red;  
   font-size: 19px;
   height: 40px;
@@ -470,3 +470,9 @@ input[type="range"]::-webkit-slider-thumb {
 
   }
  
+  .fixed-button {
+    position: fixed;
+     z-index: 9999; /* Ajusta el valor de z-index para que esté por encima de otros elementos */
+    background: #ffffff;
+  }
+  

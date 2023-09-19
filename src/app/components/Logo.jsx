@@ -4,17 +4,13 @@ const Logo = () => {
   return (
     <div className="items-center justify-between py-1 md:py-5 md:block">
       <Image src="/imagen/logocache.png" width={120} height={120} alt="logo" />
-      <b
-        href="#"
-        onClick={() => {
-          toggleSubMenu("#");
-          setNavbar(!navbar);
-        }}
-        className={`nav-link`}
-        style={{ color: "white", fontSize: "10px" }}
+      <a
+        className="md:hidden text-white"
+        style={{fontSize: "8px" }}
       >
-        Corpus de Aprendientes Chinos de Español
-      </b>
+        Subcorpus de Aprendientes Chinos de Español como Lengua Extranjera. 
+        Componente Escrito.
+      </a>
 
      
     </div>
@@ -22,3 +18,4 @@ const Logo = () => {
 };
 
 export default Logo;
+//className="text-center md:block md:hidden"

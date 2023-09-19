@@ -2,6 +2,7 @@ import Link from "next/link";
 import Progress from "./Progress";
 import Efecto from "../../app/components/Efecto";
 import Logo from "../../app/components/Logo";
+import Image from "next/image";
 
 const Header = ({ page, onhandleMove }) => {
   const handlePrevious = () => {
@@ -16,80 +17,72 @@ const Header = ({ page, onhandleMove }) => {
     <div>
       <Efecto />
 
-      <div className="mi-div-fijo">
+      <div className="w-full custom-navbar fixed z-10">
         <div style={{ backgroundColor: "red", height: "45px" }}>
           <div className="row d-flex ">
-            <div className="ml-3 col-md-2 col-lg-2 text-center">
-              <Logo />
+            <div className="col-6 col-md-1 col-lg-1text-center">
+              <div className="items-center justify-between pt-2 md:py-5 md:block">
+                <Image
+                  src="/imagen/logocache.png"
+                  width={120}
+                  height={120}
+                  alt="logo"
+                />
+              </div>
             </div>
 
-            <div className="col-md-2 col-lg-1 text-center">
-              {page === 1 && <a style={{ color: "#ffffff" }}>Búsqueda</a>}
+            <div className="col-6 col-md-1 col-lg-1 mt-1 text-center">
+              {page < 2 && (
+                <button
+                  className="btn-nav-buscar mt-lg-3"
+                  style={{
+                    border: "2px solid red",
+                  }}
+                >
+                  <a href="/">Inicio</a>
+                </button>
+              )}
+              {page > 1 && (
+                <button
+                  className="btn-nav-buscar mt-lg-3"
+                  style={{
+                    border: "2px solid red",
+                  }}
+                  onClick={handlePrevious}
+                >
+                  Atras
+                </button>
+              )}
             </div>
-            <div className="col-md-2 col-lg-2 text-center">
-              {page === 2 && <a style={{ color: "#ffffff" }}>Seleción</a>}
-            </div>
-            <div className="col-md-2 col-lg-2 text-center">
-              {page === 3 && <a style={{ color: "#ffffff" }}>Texto</a>}
-            </div>
-            <div className="col-md-8 col-lg-8 text-center"></div>
-          </div>
-          <div className="row d-flex align-items-center">
-            <div className="col-md-1 col-lg-1 text-center"></div>
 
-            <div className="col-md-6 col-lg-6 text-center">
+            <div className="col-md-3 col-lg-5 text-center">
+              {page > 0 && (
+                <a className="md:hidden text-white" style={{ fontSize: "8px" }}>
+                  Subcorpus de Aprendientes Chinos de Español como Lengua
+                  Extranjera. Componente Escrito.
+                </a>
+              )}
               <Progress currentPage={page} />
-              <h6></h6>
+              {page > 0 && (
+                <div className="text-center hidden sm:block text-white" style={{ fontSize: "18px" }}>
+                  Subcorpus de Aprendientes Chinos de Español como Lengua
+                  Extranjera. Componente Escrito.
+                </div>
+              )}
+
+              {page === 0 && (
+                <>
+                  <b className="md:hidden " style={{ fontSize: "20px" }}>
+                    Subcorpus en construcción.
+                  </b>
+
+                  <b className="text-center hidden sm:block text-white">
+                    Subcorpus en construcción.
+                  </b>
+                </>
+              )}
             </div>
           </div>
-
-            <div
-              className="d-flex align-items-center"
-              style={{ position: "fixed" }}
-            >
-                <div className="row">
-                  <div className="col-md-1 col-lg-3 container">
-                    <div className="mt-lg-3 mt-md-2"> 
-                       
-                      {page === 1 && (
-                        <Link
-                          href="/"
-                          className="btn-nav-buscar btn-nav-link"
-                          style={{ border: "2px solid red", marginLeft:"20px", marginTop:"1px"}}
-                        >
-                          Inicio
-                        </Link>
-                      )}
-
-                      {page > 1 && (
-                        <button
-                          className="btn-nav-buscar ml-3"
-                          style={{
-                            border: "2px solid red",
-                          }}
-                          onClick={handlePrevious}
-                        >
-                          Atras
-                        </button>
-                      )}
-
-                      {page > 3 && (
-                        <button
-                          className="btn-nav-corpus"
-                          style={{ border: "2px solid red" }}
-                          onClick={handleNext}
-                        >
-                          Siguiente
-                        </button>
-                      )}
-                    
-                    
-                    </div>                   
-                  
-                  </div>
-                </div>
-           
-            </div>
         </div>
       </div>
     </div>

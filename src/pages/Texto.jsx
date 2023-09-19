@@ -43,7 +43,7 @@ const Texto = ({ opciones, item }) => {
   });
 
   return (
-    <div className="mt-5 menu clearfix ">
+    <div className="mt-1 menu clearfix ">
       <div className="row">
         <div className="col-md-1 col-lg-1 "></div>
         <div className="col-md-6 col-lg-6 ">
