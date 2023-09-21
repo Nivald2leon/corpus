@@ -182,7 +182,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
     <div className="  menu clearfix form-corpus ">
       <div className=" row">
         <div className="col-sd-0 col-md-0 col-lg-1"></div>
-        <div className="mt-7 col-md-7 col-lg-7 col-sm-12 ">
+        <div className=" col-md-7 col-lg-7 col-sm-12 ">
           <Formik
             initialValues={initialValues}
             onSubmit={handleSubmit}
@@ -191,7 +191,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
             {(formik) => (
               <Form>
                 <div className=" container ">
-                  <div className="flex  my-2 mr-16 fixed-button">
+                  <div className="flex  mr-16 fixed-button">
 
                       <button
                         type="reset"
@@ -220,7 +220,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                 </div>
                 {formik.errors.palabras ? (
                   <>
-                    <br />
+                    
                     <br />
                     <ErrorMessage
                       name="palabras"
@@ -231,7 +231,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                   </>
                 ) : (
                   <>
-                    <br />
+                    
                     <br />
                     <br />
                   </>
@@ -541,7 +541,7 @@ const Formulario = ({ onDataChange, opciones, onhandleMove }) => {
                       </div>
 
                       <div
-                        className="form-group mt-2 mr-1"
+                        className="form-group mt-0 mr-1"
                         style={{
                           display: "flex",
                           flexDirection: "column",

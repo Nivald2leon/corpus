@@ -17,7 +17,7 @@ const Investigacion = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache">
-                <h3>Publicaciones</h3>
+              <b className="tit">Publicaciones</b>
                 {referencia.map((item, index) => (
                 <div style={{ textAlign: "justify", lineHeight: '2' }} key={index}>
                  

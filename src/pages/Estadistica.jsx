@@ -42,13 +42,13 @@ const Estadistica = () => {
                   key={index}
                 >
                   <h6><br></br></h6>
-                  <h3>{item.Titulo1}</h3>
+                  <b className="tit">{item.Titulo1}</b>
                   <h6><br></br></h6>
                   <Image src={estad1} alt="estad1" className="wow fadeInLeft img-fluid"/>
                   <p>{item.parrafo}</p>
-                  <h4>{item.pieparrafo}</h4>
-                  <h3>{item.Titulo2}</h3>
-                  <h4>{item.subtitulo21}</h4>
+                  <b className="subtit">{item.pieparrafo}</b>
+                  <b className="tit">{item.Titulo2}</b>
+                  <b className="subtit">{item.subtitulo21}</b>
                   <Image src={estad2} alt="estad2" className="wow fadeInRight img-fluid"/>
                   <Image src={estad3} alt="estad3" className="wow fadeInLeft img-fluid"/>
                   <Image src={estad4} alt="estad4" className="wow fadeInRight img-fluid"/>
@@ -56,9 +56,9 @@ const Estadistica = () => {
                   <Image src={estad6} alt="estad6" className="wow fadeInRight img-fluid"/>
                   <Image src={estad7} alt="estad7" className="wow fadeInLeft img-fluid"/>
                   <Image src={estad8} alt="estad8" className="wow fadeInRight img-fluid"/>
-                  <h4>{item.subtitulo22}</h4>
+                  <b className="subtit">{item.subtitulo22}</b>
                   <Image src={estad9} alt="estad9" className="wow fadeInLeft img-fluid"/>
-                  <h4>{item.subtitulo23}</h4>
+                  <b className="subtit">{item.subtitulo23}</b>
                   <Image src={estad10} alt="estad10" className="wow fadeInRight img-fluid"/>
                   <Image src={estad11} alt="estad11" className="wow fadeInLeft img-fluid"/>
                   <Image src={estad12} alt="estad12" className="wow fadeInRight img-fluid"/>

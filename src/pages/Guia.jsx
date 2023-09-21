@@ -31,7 +31,8 @@ const Guia = () => {
                     style={{ textAlign: "justify", lineHeight: "2" }}
                     key={index}
                   >
-                    <h3>{item.Titulo1}</h3>
+                    <b className="tit">{item.Titulo1}</b>
+                    <br/>
                     <a dangerouslySetInnerHTML={{ __html: item.parrafo1 }}></a>
                     <Image
                       src={guia1}

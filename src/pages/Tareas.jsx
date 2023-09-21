@@ -17,23 +17,24 @@ const Tareas = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <h3>Tareas</h3>
+              <b className="tit">Tareas</b>
               {tareas.map((item, index) => (
                 <div
                   style={{ textAlign: "justify", lineHeight: "2" }}
                   key={index}
                 >
                   <br></br>
-                  <h5><strong>{item.tarea}</strong></h5>
+                  <b className="subtit">{item.tarea}</b>
+                  <br/>
  
-                  <h5><strong>{item.subtarea1}</strong></h5>
+                  <b>{item.subtarea1}</b>
                   <p dangerouslySetInnerHTML={{ __html: item.er1 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o11 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o12 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o13 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o14 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o15 }}></p>
-                  <h5><strong>{item.subtarea2}</strong></h5>
+                  <b>{item.subtarea2}</b>
                   <p dangerouslySetInnerHTML={{ __html: item.er2 }}></p>
                   <p dangerouslySetInnerHTML={{ __html: item.o21 }}></p>
                   {item.id > 0 ? (

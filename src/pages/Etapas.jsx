@@ -19,13 +19,13 @@ const Tareas = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <h3>Etapas</h3>
+              <b className="tit">Etapas</b>
               {etapas.map((item, index) => (
                 <div
                   style={{ textAlign: "justify", lineHeight: "2" }}
                   key={index}
                 >
-                  <h5><strong>{item.Titulo}</strong></h5>
+                  <b className="subtit">{item.Titulo}</b>
                   
                   <p>{item.etapa}</p>
                   {item.id==0 ? <Image src={etapa} alt="etapa" className="wow fadeInLeft img-fluid" /> : null}

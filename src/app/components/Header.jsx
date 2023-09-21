@@ -17,11 +17,11 @@ const Header = ({ page, onhandleMove }) => {
     <div>
       <Efecto />
 
-      <div className="w-full custom-navbar fixed z-10">
-        <div style={{ backgroundColor: "red", height: "45px" }}>
+      <div className="w-full custom-navbar fixed z-10 ">
+        <div style={{ backgroundColor: "red", height: "70px" }}>
           <div className="row d-flex ">
             <div className="col-6 col-md-1 col-lg-1text-center">
-              <div className="items-center justify-between pt-2 md:py-5 md:block">
+              <div className="items-center justify-between pt-0 md:py-0 md:block">
                 <Image
                   src="/imagen/logocache.png"
                   width={120}
@@ -31,7 +31,7 @@ const Header = ({ page, onhandleMove }) => {
               </div>
             </div>
 
-            <div className="col-6 col-md-1 col-lg-1 mt-1 text-center">
+            <div className="col-6 col-md-1 col-lg-1 mt-0 text-center">
               {page < 2 && (
                 <button
                   className="btn-nav-buscar mt-lg-3"

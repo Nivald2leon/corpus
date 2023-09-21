@@ -64,17 +64,14 @@ const Contacto = () => {
       }}
     >
       <div className="container align-items-center mt-5 ">
-        <br />
-        <br />
-        <br />
-
-        <div className="row d-flex  ">
+        <br/>
+        <div className=" mt-5 row d-flex  ">
           <div className="col-md-1 col-lg-1"></div>
           <div className="col-md-3 col-lg-5">
-            <h2>Contacto</h2>
-            <div className="mt-6 hero-9-txt cache">
+          <b className="tit">Contacto</b>
+            <div className="hero-9-txt cache">
               <div style={{ textAlign: "justify", lineHeight: "2" }}>
-                <h4>Datos del Contacto</h4>
+                <b className="subtit">Datos del Contacto</b>
                 <br />
                 <a>
                   Puedes contactar con nosotros usando el formulario de esta
@@ -85,22 +82,22 @@ const Contacto = () => {
                 <b>1040583386@qq.com</b>
               </div>
               <br />
-              <br />
+              
               <Image src={contacto} alt="contacto" />
             </div>
           </div>
 
           <div className="col-md-3 col-lg-6">
-            <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <div style={{ textAlign: "justify", lineHeight: "2" }}>
-                <h4>Formulario de contacto</h4>
+            <div className=" hero-9-txt  wow fadeInRight">
+              <div style={{ textAlign: "justify", lineHeight: "1.5" }}>
+                <b className="subtit">Formulario de contacto</b>
                 <h1 style={{ color:"red"}}>
-                {isSubmitting ? "Gracias por Contactarnos!..." : "."}
+                {isSubmitting ? "Gracias por Contactarnos!..." : <br/>}
                 </h1>
                 
                 <form onSubmit={handleFormSubmit}>
                   <div
-                    className="form-group mt-2"
+                    className="form-group"
                     style={{
                       display: "flex",
                       flexDirection: "column",
@@ -121,7 +118,7 @@ const Contacto = () => {
                     />
                   </div>
                   <div
-                    className="form-group mt-2"
+                    className="form-group mt-0"
                     style={{
                       display: "flex",
                       flexDirection: "column",
@@ -142,12 +139,12 @@ const Contacto = () => {
                     />
                   </div>
                   <div
-                    className="form-group mt-2"
+                    className="form-group mt-0"
                     style={{
                       display: "flex",
                       flexDirection: "column",
                       alignItems: "flex-start",
-                      height: "240px",
+                      height: "180px",
                     }}
                   >
                     <label htmlFor="message" style={{ fontSize: "14px" }}>
@@ -160,16 +157,16 @@ const Contacto = () => {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      style={{ height: "240px" }}
+                      style={{ height: "130px" }}
                     ></textarea>
                   </div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="mb-2 mt-2 btn-nav-buscar"
+                    className=" btn-nav-buscar pb-2"
                     style={{
                       marginLeft: "auto",
-                      backgroundColor: "red",
+                      border: "2px solid red",
                     }}
                   >
                     {isSubmitting ? "Enviando..." : "Enviar"}

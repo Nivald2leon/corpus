@@ -23,7 +23,7 @@ const Diseño = () => {
               
                 {diseño.map((item, index) => (
                 <div style={{ textAlign: "justify", lineHeight: '2' }} key={index}>
-                  <h3>{item.Titulo}</h3>
+                  <b className="tit">{item.Titulo}</b>
                   <p>{item.parrafo1}</p>
                   
                   <p>{item.parrafo2}</p>

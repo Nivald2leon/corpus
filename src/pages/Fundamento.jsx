@@ -17,13 +17,13 @@ const Fundamento = () => {
         <div className="row d-flex align-items-center">
           <div className="col-md-6 col-lg-8">
             <div className="mt-6 hero-9-txt cache wow fadeInRight">
-              <h3>Fundamentos teóricos y metodológicos</h3>
+            <b className="tit">Fundamentos teóricos y metodológicos</b>
               {fundamento.map((item, index) => (
                 <div
                   style={{ textAlign: "justify", lineHeight: "2" }}
                   key={index}
                 >
-                  <h5><strong>{item.Titulo}</strong></h5>
+                  <b className="subtit">{item.Titulo}</b>
                   <p>{item.parrafo}</p>
                 </div>
               ))}

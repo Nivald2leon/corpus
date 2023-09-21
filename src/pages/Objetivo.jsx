@@ -24,9 +24,9 @@ const Objetivo = () => {
                 >
                   <br />
                   <br />
-                  <h3 style={{ textAlign: "center" }}>{item.Titulo}</h3>
+                  <b className="tit">{item.Titulo}</b>
                   <br/>
-                  <p style={{ fontSize: '22px' }}>{item.parrafo1}</p>
+                  <p >{item.parrafo1}</p>
                   <br />
                   <br />
                   <br />

@@ -327,7 +327,7 @@ li a:hover {
 
 .selec-simple{
   border: 2px solid red;
-  height: 40px;
+  height: 35px;
   border-radius: var(--bs-border-radius); 
   width: 300px
   
@@ -387,7 +387,7 @@ li a:hover {
   background-color:white;
   border-color:red;  
   font-size: 19px;
-  height: 40px;
+  height: 30px;
   border-radius: var(--bs-border-radius);
   width: 100px;
   
@@ -476,3 +476,13 @@ input[type="range"]::-webkit-slider-thumb {
     background: #ffffff;
   }
   
+
+.tit{
+  font-size: 22px;
+
+}
+
+.subtit{
+  font-size: 18px;
+
+}
